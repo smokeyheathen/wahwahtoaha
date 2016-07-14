@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>French Speaking Exercise</title>
+        <link rel="stylesheet" href="css/style.css">   
+  </head>
+
+  <body>
+
+    <div id="page-wrapper">
+  <h1>French Speaking exercise</h1>
+  <p>I provide a phrase in English, you translate it to French (eventually you will be able to speak it).</p>
+  <p id="msg"></p>
+  
+
+  <input type="file" id="phrasefile" name="phrasefile"/>
+  <p> </p>
+  
+  <input type="text" name="speech-msg" id="speech-msg">
+  
+  <p id="translation"></p>
+  <p id="help"></p>
+  <button id="record" onclick="recordVoiceAnswer();">Record</button>
+	<!--	
+	<button id="help">Help!</button>
+	<button id="translate">Translate</button>
+	-->
+  	<div class="option">
+		<label for="exercise">Exercise subject</label>
+		<select name="exercise" id="exercise" onchange="exerciseTypeChanged()">	
+		  <option value=""></option>
+		  <option value="sayingandtelling">Saying and Telling</option>
+		  <option value="givingandreceiving">Giving and Receiving</option>
+		  <option value="weatherforecasts">Weather Forecasts</option>
+		  <option value="directions">directions</option>
+		</select>
+	</div>
+	
+	
+	<!--
+	<div class="option">
+		<label for="voice">Voice</label>
+		<select name="voice" id="voice"></select>
+	</div>
+
+	
+
+	<div class="option">
+		<label for="volume">Volume</label>
+		<input type="range" min="0" max="1" step="0.1" name="volume" id="volume" value="1">
+	</div>
+	<div class="option">
+		<label for="rate">Rate</label>
+		<input type="range" min="0.1" max="10" step="0.1" name="rate" id="rate" value="1">
+	</div>
+	<div class="option">
+		<label for="pitch">Pitch</label>
+		<input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
+	</div>
+	-->
+	<!--
+	<button id="speak">Speak</button>
+-->
+
+</div>
+    
+		<script src="js/papaparse.min.js"></script>
+		<script src="js/french-phrase-templates.js"></script>
+		
+		<script src="js/french-speaking.js"></script>
+  </body>
+</html>
