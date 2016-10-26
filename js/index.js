@@ -37,8 +37,8 @@ window.speechSynthesis.onvoiceschanged = function(event) {
   e.functions.loadVoices();
 };
 
-document.getElementById('speech-msg').onkeydown = function(e){
-   if(e.keyCode == 13){
+document.getElementById('speech-msg').onkeydown = function(event){
+   if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase
 		var lowerCaseInput = speechMsgInput.value;
 		lowerCaseInput = lowerCaseInput.toLowerCase();
