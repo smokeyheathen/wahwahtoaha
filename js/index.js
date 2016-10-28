@@ -59,7 +59,7 @@ window.speechSynthesis.onvoiceschanged = function(event) {
   e.functions.loadVoices();
 };
 
-$('#speech-msg').keydown(function(event){
+$(document).keydown(function(event){
    if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase
 		var lowerCaseInput = speechMsgInput.value;
