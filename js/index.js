@@ -42,9 +42,6 @@ var listLength = frenchPhraseList.length;
 // Get the 'speak' button
 var button = $('#speak');
 
-// Get the text input element.
-var speechMsgInput = $('#speech-msg');
-
 // Get the attribute controls.
 //var voiceSelect = $('#voice');
 var volumeInput = $('#volume');
@@ -62,8 +59,10 @@ window.speechSynthesis.onvoiceschanged = function(event) {
 $(document).keydown(function(event){
    if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase
-		var lowerCaseInput = speechMsgInput.value;
-		lowerCaseInput = lowerCaseInput.toLowerCase();
+
+		// Get the text input element.
+		var speechMsgInput = $('#speech-msg').val();
+		lowerCaseInput = speechMsgInput.toLowerCase();
 		var lowerCasePhrase = "" + e.defaults.current_phrase;
 		var lowerCasePhraseEnglish = "" + e.defaults.current_phrase;
 
