@@ -15,7 +15,7 @@ e = {
     
     changed_excercise_type:function() {
         var new_exercise = "";
-        new_exercise = "" +	document.getElementById('exercise').value;
+        new_exercise = "" +	$('#exercise').val();
         e.defaults.current_exercise = new_exercise;
         e.functions.get_new_phrase(e.defaults.current_exercise);
         e.functions.speak(e.defaults.current_phrase);
@@ -219,8 +219,8 @@ e = {
       msg.pitch = parseFloat((Math.random()*0.2)+0.9); // parseFloat(pitchInput.value);
       console.log ("Rate: " + msg.rate);
       console.log ("Pitch: " + msg.pitch);
-      //document.getElementById('rate').value = msg.rate
-      //document.getElementById('pitch').value = msg.pitch
+      //$('#rate').val(msg.rate);
+      //$('#pitch').val(msg.pitch);
     
       //	msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google franais"; })[0];
       msg.lang = "fr-FR";
@@ -231,14 +231,14 @@ e = {
       window.speechSynthesis.speak(msg);
     
       msg.onstart = function(event) {
-          document.getElementById('button_play').innerHTML = "Playing";
-          document.getElementById('button_play').setAttribute("disabled", "disabled");
+          $('#button_play').text("Playing");
+          $('#button_play').attr("disabled", "disabled");
           //disabled="disabled"
       };
     
       msg.onend = function(event) {
-          document.getElementById('button_play').innerHTML = "Play audio";
-          document.getElementById('button_play').removeAttribute("disabled");
+          $('#button_play').text("Play audio");
+          $('#button_play').removeAttr("disabled");
       };
     },
     
@@ -262,10 +262,11 @@ e = {
         if (lowerCasePhrase == lowerCaseInput) {
           incorrectAnswerCount=0;
           document.getElementById('translation').innerHTML = "";
+          $('#translation').text("");
           console.log ("Correct!");
           // Clear the text input
-          //document.getElementById('usersays').innerHTML = "";
-            document.getElementById('usersays').value = "";
+          //$('#usersays').text("");
+            $('#usersays').val("");
           //randomNumber = Math.floor((Math.random() * (listLength)));
           //speak(frenchPhraseList[randomNumber][1]);
           skipNextPhrase();
@@ -276,13 +277,13 @@ e = {
           speak(current_phrase);
           incorrectAnswerCount++;
           if (incorrectAnswerCount > 3){
-            //document.getElementById('translation').innerHTML = frenchPhraseList[randomNumber][1];
-            document.getElementById('translation').innerHTML = current_phrase;
+            //$('#translation').text(frenchPhraseList[randomNumber][1]);
+            $('#translation').text(current_phrase);
     
           }
           if (incorrectAnswerCount > 5){
-            //document.getElementById('help').innerHTML = frenchPhraseList[randomNumber][0];
-            document.getElementById('help').innerHTML = current_phrase;
+            //$('#help').text(frenchPhraseList[randomNumber][0]);
+            $('#help').text(current_phrase);
           }
         }
     },    
@@ -294,8 +295,8 @@ e = {
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
         var spokenInputConfidence = event.results[0][0].confidence;
-        //document.getElementById('usersays').innerHTML = "" + spokenInput;
-        document.getElementById('usersays').value = "" + spokenInput;
+        //$('#usersays').text("" + spokenInput);
+        $('#usersays').val("" + spokenInput);
     
         e.functions.checkAnswer(spokenInput);
       }
