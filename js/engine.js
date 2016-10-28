@@ -255,12 +255,12 @@ e = {
         lowerCasePhrase = lowerCasePhrase.toLowerCase();
     
         console.log("LOWER Case Phrase: " + lowerCasePhrase);
-        console.log("REMOVE DIACRITICS Phrase: " + removeDiacritics(lowerCasePhrase));
+        console.log("REMOVE DIACRITICS Phrase: " + e.functions.removeDiacritics(lowerCasePhrase));
     
-        lowerCasePhrase = removeDiacritics(lowerCasePhrase);
+        lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
     
         if (lowerCasePhrase == lowerCaseInput) {
-          incorrectAnswerCount=0;
+          e.defaults.incorrectAnswerCount=0;
           $('#translation').text("");
           console.log ("Correct!");
           // Clear the text input
@@ -274,13 +274,13 @@ e = {
         {
           //speak(frenchPhraseList[randomNumber][1]);
           speak(current_phrase);
-          incorrectAnswerCount++;
-          if (incorrectAnswerCount > 3){
+          e.defaults.incorrectAnswerCount++;
+          if (e.defaults.incorrectAnswerCount > 3){
             //$('#translation').text(frenchPhraseList[randomNumber][1]);
             $('#translation').text(current_phrase);
     
           }
-          if (incorrectAnswerCount > 5){
+          if (e.defaults.incorrectAnswerCount > 5){
             //$('#help').text(frenchPhraseList[randomNumber][0]);
             $('#help').text(current_phrase);
           }
