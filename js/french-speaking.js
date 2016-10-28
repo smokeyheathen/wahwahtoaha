@@ -15,7 +15,12 @@
 var phrasesToSay = ["Je ne sais pas", "Je ne comprends pas", "Je voudrais prendre un verre"];
 
 /*
+ * FUNCTION: printPhrase(text)
+ * output the specified text in the translation field
  */
+function printPhrase(text) {
+console.log($('#translation'));
+$('#translation').text(text);
 }
 
 function skipNextPhrase(){
