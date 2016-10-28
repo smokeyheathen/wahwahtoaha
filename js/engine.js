@@ -261,7 +261,6 @@ e = {
     
         if (lowerCasePhrase == lowerCaseInput) {
           incorrectAnswerCount=0;
-          document.getElementById('translation').innerHTML = "";
           $('#translation').text("");
           console.log ("Correct!");
           // Clear the text input
