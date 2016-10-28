@@ -1,10 +1,5 @@
-/*
- * Check for browser support
- */
 $(document).ready(function() {
 	
-if ('speechSynthesis' in window) {
-} else {
 	// parse the pathname to get page and subpage
 	var pathname = window.location.pathname.split('/');
 	var page = 'home';
@@ -25,9 +20,16 @@ if ('speechSynthesis' in window) {
 	$('#navbar li#'+page+'-menu').addClass('active');
 	console.log('#navbar li#'+page+'-menu');
 
+	//Check for browser support
+	if ('speechSynthesis' in window) {
 		$('#msg').html('Your browser <strong>supports</strong> speech synthesis.');
+	} else {
 		$('#msg').html('Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.');
 		$('#msg').addClass('not-supported');
+	}
+	
+	$('#language-pair').text('Language: French (from English)');
+	
 });
 
 e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
