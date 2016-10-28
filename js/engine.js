@@ -223,7 +223,7 @@ e = {
       //$('#pitch').val(msg.pitch);
     
       //	msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google français"; })[0];
-      msg.lang = "fr-FR";
+      msg.lang = e.defaults.language_target;
     
       // Queue this utterance.
       console.log ("Msg: " + msg.text);
@@ -289,7 +289,7 @@ e = {
     
     recordVoiceAnswer: function() {
       var voiceRecognition = new webkitSpeechRecognition();
-      voiceRecognition.lang = "fr-FR";
+      voiceRecognition.lang = e.defaults.language_target;
       voiceRecognition.onresult = function(event) {
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
