@@ -95,71 +95,6 @@ function speak(text) {
 }
 
 
-
-
-function recordVoiceAnswer() {
-	var voiceRecognition = new webkitSpeechRecognition();
-	voiceRecognition.lang = "fr-FR";
-	voiceRecognition.onresult = function(event) {
-		console.log("I heard this: " + event.results[0][0].transcript);
-		var spokenInput = event.results[0][0].transcript;
-		var spokenInputConfidence = event.results[0][0].confidence;
-		//document.getElementById('usersays').innerHTML = "" + spokenInput;
-		document.getElementById('usersays').value = "" + spokenInput;
-
-		checkAnswer(spokenInput);
-	}
-	voiceRecognition.onerror = function(e) {
-        console.log ("Recognition stopped! (error) " + e.error);
-				voiceRecognition.stop();
-  }
-	voiceRecognition.start();
-	console.log ("recognition started");
-}
-
-function checkAnswer (inputPhrase) {
-		// Check current input text with previous spoken phrase
-		//var lowerCaseInput = speechMsgInput.value;
-		var lowerCaseInput = inputPhrase
-		lowerCaseInput = lowerCaseInput.toLowerCase();
-		//var lowerCasePhrase = frenchPhraseList[randomNumber][0];
-		var lowerCasePhrase = "" + current_phrase;
-
-		lowerCasePhrase = lowerCasePhrase.toLowerCase();
-
-		console.log("LOWER Case Phrase: " + lowerCasePhrase);
-		console.log("REMOVE DIACRITICS Phrase: " + removeDiacritics(lowerCasePhrase));
-
-		lowerCasePhrase = removeDiacritics(lowerCasePhrase);
-
-		if (lowerCasePhrase == lowerCaseInput) {
-			incorrectAnswerCount=0;
-			document.getElementById('translation').innerHTML = "";
-			console.log ("Correct!");
-			// Clear the text input
-			//document.getElementById('usersays').innerHTML = "";
-				document.getElementById('usersays').value = "";
-			//randomNumber = Math.floor((Math.random() * (listLength)));
-			//speak(frenchPhraseList[randomNumber][1]);
-			skipNextPhrase();
-		}
-		else
-		{
-			//speak(frenchPhraseList[randomNumber][1]);
-			speak(current_phrase);
-			incorrectAnswerCount++;
-			if (incorrectAnswerCount > 3){
-				//document.getElementById('translation').innerHTML = frenchPhraseList[randomNumber][1];
-				document.getElementById('translation').innerHTML = current_phrase;
-
-			}
-			if (incorrectAnswerCount > 5){
-				//document.getElementById('help').innerHTML = frenchPhraseList[randomNumber][0];
-				document.getElementById('help').innerHTML = current_phrase;
-			}
-		}
-}
-
 //document.getElementById('phrasefile').addEventListener('change', handleFileSelect, false);
 
 
@@ -170,8 +105,8 @@ function skipNextPhrase(){
 			//document.getElementById('usersays').innerHTML = "";
 			document.getElementById('usersays').value = "";
 			//randomNumber = Math.floor((Math.random() * (listLength)));
-			current_phrase = get_new_phrase(current_exercise);
-			speak(current_phrase);
+			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
+			speak(e.defaults.current_phrase);
 }
 
 

@@ -240,7 +240,72 @@ e = {
           document.getElementById('button_play').innerHTML = "Play audio";
           document.getElementById('button_play').removeAttribute("disabled");
       };
-    }
+    },
+    
+    // from french-speaking:
+    
+    checkAnswer: function(inputPhrase) {
+        // Check current input text with previous spoken phrase
+        //var lowerCaseInput = speechMsgInput.value;
+        var lowerCaseInput = inputPhrase
+        lowerCaseInput = lowerCaseInput.toLowerCase();
+        //var lowerCasePhrase = frenchPhraseList[randomNumber][0];
+        var lowerCasePhrase = "" + current_phrase;
+    
+        lowerCasePhrase = lowerCasePhrase.toLowerCase();
+    
+        console.log("LOWER Case Phrase: " + lowerCasePhrase);
+        console.log("REMOVE DIACRITICS Phrase: " + removeDiacritics(lowerCasePhrase));
+    
+        lowerCasePhrase = removeDiacritics(lowerCasePhrase);
+    
+        if (lowerCasePhrase == lowerCaseInput) {
+          incorrectAnswerCount=0;
+          document.getElementById('translation').innerHTML = "";
+          console.log ("Correct!");
+          // Clear the text input
+          //document.getElementById('usersays').innerHTML = "";
+            document.getElementById('usersays').value = "";
+          //randomNumber = Math.floor((Math.random() * (listLength)));
+          //speak(frenchPhraseList[randomNumber][1]);
+          skipNextPhrase();
+        }
+        else
+        {
+          //speak(frenchPhraseList[randomNumber][1]);
+          speak(current_phrase);
+          incorrectAnswerCount++;
+          if (incorrectAnswerCount > 3){
+            //document.getElementById('translation').innerHTML = frenchPhraseList[randomNumber][1];
+            document.getElementById('translation').innerHTML = current_phrase;
+    
+          }
+          if (incorrectAnswerCount > 5){
+            //document.getElementById('help').innerHTML = frenchPhraseList[randomNumber][0];
+            document.getElementById('help').innerHTML = current_phrase;
+          }
+        }
+    },    
+    
+    recordVoiceAnswer: function() {
+      var voiceRecognition = new webkitSpeechRecognition();
+      voiceRecognition.lang = "fr-FR";
+      voiceRecognition.onresult = function(event) {
+        console.log("I heard this: " + event.results[0][0].transcript);
+        var spokenInput = event.results[0][0].transcript;
+        var spokenInputConfidence = event.results[0][0].confidence;
+        //document.getElementById('usersays').innerHTML = "" + spokenInput;
+        document.getElementById('usersays').value = "" + spokenInput;
+    
+        e.functions.checkAnswer(spokenInput);
+      }
+      voiceRecognition.onerror = function(event) {
+            console.log ("Recognition stopped! (error) " + event.error);
+            voiceRecognition.stop();
+      }
+      voiceRecognition.start();
+      console.log ("recognition started");
+    },    
     
   }
 }
