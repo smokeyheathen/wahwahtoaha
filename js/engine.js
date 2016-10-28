@@ -250,7 +250,7 @@ e = {
         var lowerCaseInput = inputPhrase;
         lowerCaseInput = lowerCaseInput.toLowerCase();
         //var lowerCasePhrase = frenchPhraseList[randomNumber][0];
-        var lowerCasePhrase = "" + current_phrase;
+        var lowerCasePhrase = "" + e.defaults.current_phrase;
     
         lowerCasePhrase = lowerCasePhrase.toLowerCase();
     
@@ -273,16 +273,16 @@ e = {
         else
         {
           //speak(frenchPhraseList[randomNumber][1]);
-          speak(current_phrase);
+          printPhrase(e.defaults.current_phrase);
           e.defaults.incorrectAnswerCount++;
           if (e.defaults.incorrectAnswerCount > 3){
             //$('#translation').text(frenchPhraseList[randomNumber][1]);
-            $('#translation').text(current_phrase);
+            $('#translation').text(e.defaults.current_phrase);
     
           }
           if (e.defaults.incorrectAnswerCount > 5){
             //$('#help').text(frenchPhraseList[randomNumber][0]);
-            $('#help').text(current_phrase);
+            $('#help').text(e.defaults.current_phrase);
           }
         }
     },    
