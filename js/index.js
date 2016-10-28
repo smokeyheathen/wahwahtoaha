@@ -1,13 +1,34 @@
 /*
  * Check for browser support
  */
-
+$(document).ready(function() {
+	
 if ('speechSynthesis' in window) {
 } else {
-}
+	// parse the pathname to get page and subpage
+	var pathname = window.location.pathname.split('/');
+	var page = 'home';
+	var subpage = '';
+	if (typeof pathname[1] !== 'undefined' && pathname[1] !='') {
+    page = pathname[1];
+  }
+	if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
+    subpage = pathname[2];
+  }
+	console.log('page:' + page + ' - subpage: ' + subpage);
+		
+	// load page into main content area
+	$('#main').html($('#'+page).text());
+	
+	// update menu
+	$('#navbar li').removeClass('active');
+	$('#navbar li#'+page+'-menu').addClass('active');
+	console.log('#navbar li#'+page+'-menu');
+
 		$('#msg').html('Your browser <strong>supports</strong> speech synthesis.');
 		$('#msg').html('Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.');
 		$('#msg').addClass('not-supported');
+});
 
 e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
 var frenchPhraseList = ["",""];
