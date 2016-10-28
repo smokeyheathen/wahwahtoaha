@@ -20,11 +20,10 @@ var phrasesToSay = ["Je ne sais pas", "Je ne comprends pas", "Je voudrais prendr
 
 function skipNextPhrase(){
 			incorrectAnswerCount=0;
-			document.getElementById('translation').innerHTML = "";
+			$('#translation').text("");
 			// Clear the text input
-			//document.getElementById('usersays').innerHTML = "";
-			document.getElementById('usersays').value = "";
 			//randomNumber = Math.floor((Math.random() * (listLength)));
+			$('#usersays').val("");
 			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
 			speak(e.defaults.current_phrase);
 }
