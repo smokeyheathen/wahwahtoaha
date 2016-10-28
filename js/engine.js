@@ -1,8 +1,8 @@
 e = {
   defaults:{
     // Set default base (users native) and target (what they want to learn) languages
-    language_base: "EN",
-    language_target: "FR",
+    language_base: "en-GB",
+    language_target: "fr-FR",
     current_phrase: "",
     previous_phrase: "",
     next_phrase: "",
