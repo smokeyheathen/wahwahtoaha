@@ -247,7 +247,7 @@ e = {
     checkAnswer: function(inputPhrase) {
         // Check current input text with previous spoken phrase
         //var lowerCaseInput = speechMsgInput.value;
-        var lowerCaseInput = inputPhrase
+        var lowerCaseInput = inputPhrase;
         lowerCaseInput = lowerCaseInput.toLowerCase();
         //var lowerCasePhrase = frenchPhraseList[randomNumber][0];
         var lowerCasePhrase = "" + current_phrase;
