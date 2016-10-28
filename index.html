@@ -61,7 +61,12 @@
         </div>
     </nav>
 		
-				<!-- main -->
+    <!-- main content area -->
+    <div id="main"></div><!-- /main content area -->
+
+				<!-- HTML for main content area -->
+    <!-- Home -->
+    <script id="home" type="text/x-tmpl">
     <div class="container-fluid theme-showcase" role="main">
         <div class="row">
             <div class="col-md-1 col-md-offset-5 speechbubbles">
@@ -83,7 +88,89 @@
                 <p id="msg"></p>
             </div>
         </div>
-    </div><!-- /main -->
+      </div>
+    </script>	<!-- /Home -->
+
+    <!-- Listening -->
+    <script id="listening" type="text/x-tmpl">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <button class="btn btn-lg btn-warning skipbutton" id="button_play" name="button_play" onclick="e.functions.replayPhrase();" type="button">Play audio</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 voffset3">
+            <input class="form-control input-lg text-center" id="speech-msg" name="speech-msg" placeholder="Type what you hear in French here" type="text">
+          </div>
+        </div>
+        <div class="row voffset4">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <button class="btn btn-lg btn-warning skipbutton" id="button_next" name="button_next" onclick="e.functions.skipNextPhrase();" type="button">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid theme-showcase" role="main">
+        <div class="row text-center voffset4">
+          Exercise Type:
+          <div aria-label="Numbers" class="btn-group" role="group">
+            <!-- <button type="button" class="btn btn-default" onclick="e.functions.set_exercise_type('number_general_phrases');">General phrases</button> -->
+            <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_money_small');" type="button">Money amounts</button>
+          </div>
+        </div>
+        <div class="row text-center voffset2">
+          Speech rate:
+          <div aria-label="Numbers" class="btn-group" role="group">
+            <button class="btn btn-default" onclick="e.functions.set_speech_rate(0.5);" type="button">Very slow</button> <button class="btn btn-default" onclick="e.functions.set_speech_rate(0.8);" type="button">Medium</button> <button class="btn btn-default" onclick="e.functions.set_speech_rate(1.1);" type="button">Native</button>
+          </div>
+        </div>
+        <div class="row voffset4">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <p id="msg"></p>
+          </div>
+        </div>
+      </div>
+    </script> <!-- /Listening -->
+
+    <!-- Speaking -->
+    <script id="speaking" type="text/x-tmpl">
+      <div class="main-top light-bg">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <p id="translation"></p>
+          </div>
+          <div class="col-md-8 col-md-offset-2 voffset3 text-center">
+            <button class="btn btn-lg btn-warning skipbutton" id="record" onclick="e.functions.recordVoiceAnswer();" type="button"><span aria-hidden="true" class="glyphicon glyphicon-record"></span> Speak your translation</button>
+          </div>
+          <div class="col-md-8 col-md-offset-2 voffset3 text-center">
+            <input class="form-control input-lg text-center" id="usersays" name="usersays" placeholder="Type your translation" type="text"> <!-- <p id="usersays"></p> -->
+            <p id="help"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 voffset3 text-center">
+            <button class="btn btn-lg btn-warning skipbutton" onclick="e.functions.skipNextPhrase();" type="button">Next</button>
+          </div>
+        </div>
+      </div><!-- end main-top -->
+      <div class="container-fluid theme-showcase" role="main">
+        <div class="row text-center voffset4">
+          <span id="language-pair"></span>
+        </div>
+        <div class="row text-center voffset4">
+          Exercise Type:
+          <div aria-label="Numbers" class="btn-group" role="group">
+            <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.set_exercise_type('number_money_small');" type="button">Money amounts</button>
+          </div>
+        </div>
+        <div class="row voffset4">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <p id="msg"></p>
+          </div>
+        </div>
+      </div>
+    </script> <!-- /Speaking -->
+
 		
     <script src="/js/papaparse.min.js"></script> 
     <script src="/js/french-phrase-templates.js"></script> 
