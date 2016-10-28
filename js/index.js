@@ -1,14 +1,13 @@
 /*
  * Check for browser support
  */
-var supportMsg = document.getElementById('msg');
 
 if ('speechSynthesis' in window) {
-	supportMsg.innerHTML = 'Your browser <strong>supports</strong> speech synthesis.';
 } else {
-	supportMsg.innerHTML = 'Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.';
-	supportMsg.classList.add('not-supported');
 }
+		$('#msg').html('Your browser <strong>supports</strong> speech synthesis.');
+		$('#msg').html('Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.');
+		$('#msg').addClass('not-supported');
 
 e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
 var frenchPhraseList = ["",""];
@@ -18,16 +17,16 @@ var randomNumber = Math.floor((Math.random() * 3));
 var listLength = frenchPhraseList.length;
 
 // Get the 'speak' button
-var button = document.getElementById('speak');
+var button = $('#speak');
 
 // Get the text input element.
-var speechMsgInput = document.getElementById('speech-msg');
+var speechMsgInput = $('#speech-msg');
 
 // Get the attribute controls.
-//var voiceSelect = document.getElementById('voice');
-var volumeInput = document.getElementById('volume');
-var rateInput = document.getElementById('rate');
-var pitchInput = document.getElementById('pitch');
+//var voiceSelect = $('#voice');
+var volumeInput = $('#volume');
+var rateInput = $('#rate');
+var pitchInput = $('#pitch');
 
 // Execute e.functions.loadVoices.
 e.functions.loadVoices();
@@ -58,7 +57,7 @@ document.getElementById('speech-msg').onkeydown = function(event){
 			e.defaults.incorrectAnswerCount=0;
 			console.log ("Correct!");
 			// Clear the text input
-			document.getElementById('speech-msg').value = "";
+			$('#speech-msg').val("");
 			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
 			e.functions.speak(e.defaults.current_phrase);
 		}
@@ -69,7 +68,7 @@ document.getElementById('speech-msg').onkeydown = function(event){
 			if (e.defaults.incorrectAnswerCount > 3){
 			}
 			if (e.defaults.incorrectAnswerCount > 5){
-				document.getElementById('help').innerHTML = e.defaults.current_phrase;
+				$('#help').text(e.defaults.current_phrase);
 			}
 		}
    }
