@@ -36,7 +36,7 @@ window.speechSynthesis.onvoiceschanged = function(event) {
   e.functions.loadVoices();
 };
 
-document.getElementById('speech-msg').onkeydown = function(event){
+$('#speech-msg').keydown(function(event){
    if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase
 		var lowerCaseInput = speechMsgInput.value;
@@ -72,4 +72,4 @@ document.getElementById('speech-msg').onkeydown = function(event){
 			}
 		}
    }
-};
+});
