@@ -23,25 +23,17 @@ console.log($('#translation'));
 $('#translation').text(text);
 }
 
+// this is different from the listening function, so let's keep it here for now
 function skipNextPhrase(){
+	console.log('skip');
 			incorrectAnswerCount=0;
 			$('#translation').text("");
 			// Clear the text input
-			//randomNumber = Math.floor((Math.random() * (listLength)));
 			$('#usersays').val("");
 			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
-			speak(e.defaults.current_phrase);
+			printPhrase(e.defaults.current_phrase);
 }
 
+$(document).ready(function() {
 skipNextPhrase();
-
-
-/*
-// Set up an event listener for when the 'speak' button is clicked.
-button.addEventListener('click', function(e) {
-	if (speechMsgInput.value.length > 0) {
-		//speak(speechMsgInput.value);
-		speak(phrasesToSay[randomNumber]);
-	}
 });
-*/
