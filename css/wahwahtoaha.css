@@ -10,9 +10,17 @@
 .voffset8 { margin-top: 100px; }
 .voffset9 { margin-top: 150px; }
 
-.jumbotron {background: #FFFEE9 url("../wahwahtoaha-background.jpg") no-repeat; padding-bottom:6em;
+.jumbotron {
+	/* background: #FFFEE9 url("../wahwahtoaha-background.jpg") no-repeat 100% 100%; padding-bottom:6em; */
+  background-color: #FFFEE9;
+	padding-bottom:6em;
 	color: #DEC25B;
-padding-top:0;
+	background-size: cover;
+	padding-top:0;
+}
+
+body {
+	background-color: #FFDE64;
 }
 
 .navbar {	border:0;}
@@ -21,7 +29,14 @@ padding-top:0;
 {
 	background-color: transparent;
 	margin-bottom:0;
+	color: #555;
 }
+
+.navbar-default .navbar-brand,  .navbar-default .navbar-nav>li>a
+{
+  color: #555;
+}
+
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #555;
@@ -146,3 +161,6 @@ font-size: 20px;
 	bottom: 100px;
 	left: 150px;
 }
+
+.main-top {padding-bottom: 3em;}
+.light-bg{background-color: #FFFEE9;}

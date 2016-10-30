@@ -1,14 +1,36 @@
-/*
- * Check for browser support
- */
-var supportMsg = document.getElementById('msg');
+$(document).ready(function() {
+	
+	// parse the pathname to get page and subpage
+	var pathname = window.location.pathname.split('/');
+	var page = 'home';
+	var subpage = '';
+	if (typeof pathname[1] !== 'undefined' && pathname[1] !='') {
+    page = pathname[1];
+  }
+	if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
+    subpage = pathname[2];
+  }
+	console.log('page:' + page + ' - subpage: ' + subpage);
+		
+	// load page into main content area
+	$('#main').html($('#'+page).text());
+	
+	// update menu
+	$('#navbar li').removeClass('active');
+	$('#navbar li#'+page+'-menu').addClass('active');
+	console.log('#navbar li#'+page+'-menu');
 
-if ('speechSynthesis' in window) {
-	supportMsg.innerHTML = 'Your browser <strong>supports</strong> speech synthesis.';
-} else {
-	supportMsg.innerHTML = 'Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.';
-	supportMsg.classList.add('not-supported');
-}
+	//Check for browser support
+	if ('speechSynthesis' in window) {
+		$('#msg').html('Your browser <strong>supports</strong> speech synthesis.');
+	} else {
+		$('#msg').html('Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.');
+		$('#msg').addClass('not-supported');
+	}
+	
+	$('#language-pair').text('Language: French (from English)');
+	
+});
 
 e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
 var frenchPhraseList = ["",""];
@@ -18,16 +40,13 @@ var randomNumber = Math.floor((Math.random() * 3));
 var listLength = frenchPhraseList.length;
 
 // Get the 'speak' button
-var button = document.getElementById('speak');
-
-// Get the text input element.
-var speechMsgInput = document.getElementById('speech-msg');
+var button = $('#speak');
 
 // Get the attribute controls.
-//var voiceSelect = document.getElementById('voice');
-var volumeInput = document.getElementById('volume');
-var rateInput = document.getElementById('rate');
-var pitchInput = document.getElementById('pitch');
+//var voiceSelect = $('#voice');
+var volumeInput = $('#volume');
+var rateInput = $('#rate');
+var pitchInput = $('#pitch');
 
 // Execute e.functions.loadVoices.
 e.functions.loadVoices();
@@ -37,11 +56,13 @@ window.speechSynthesis.onvoiceschanged = function(event) {
   e.functions.loadVoices();
 };
 
-document.getElementById('speech-msg').onkeydown = function(e){
-   if(e.keyCode == 13){
+$(document).keydown(function(event){
+   if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase
-		var lowerCaseInput = speechMsgInput.value;
-		lowerCaseInput = lowerCaseInput.toLowerCase();
+
+		// Get the text input element.
+		var speechMsgInput = $('#speech-msg').val();
+		lowerCaseInput = speechMsgInput.toLowerCase();
 		var lowerCasePhrase = "" + e.defaults.current_phrase;
 		var lowerCasePhraseEnglish = "" + e.defaults.current_phrase;
 
@@ -58,7 +79,7 @@ document.getElementById('speech-msg').onkeydown = function(e){
 			e.defaults.incorrectAnswerCount=0;
 			console.log ("Correct!");
 			// Clear the text input
-			document.getElementById('speech-msg').value = "";
+			$('#speech-msg').val("");
 			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
 			e.functions.speak(e.defaults.current_phrase);
 		}
@@ -69,8 +90,8 @@ document.getElementById('speech-msg').onkeydown = function(e){
 			if (e.defaults.incorrectAnswerCount > 3){
 			}
 			if (e.defaults.incorrectAnswerCount > 5){
-				document.getElementById('help').innerHTML = e.defaults.current_phrase;
+				$('#help').text(e.defaults.current_phrase);
 			}
 		}
    }
-};
+});

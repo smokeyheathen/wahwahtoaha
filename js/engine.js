@@ -1,8 +1,8 @@
 e = {
   defaults:{
     // Set default base (users native) and target (what they want to learn) languages
-    language_base: "EN",
-    language_target: "FR",
+    language_base: "en-GB",
+    language_target: "fr-FR",
     current_phrase: "",
     previous_phrase: "",
     next_phrase: "",
@@ -15,7 +15,7 @@ e = {
     
     changed_excercise_type:function() {
         var new_exercise = "";
-        new_exercise = "" +	document.getElementById('exercise').value;
+        new_exercise = "" +	$('#exercise').val();
         e.defaults.current_exercise = new_exercise;
         e.functions.get_new_phrase(e.defaults.current_exercise);
         e.functions.speak(e.defaults.current_phrase);
@@ -219,11 +219,11 @@ e = {
       msg.pitch = parseFloat((Math.random()*0.2)+0.9); // parseFloat(pitchInput.value);
       console.log ("Rate: " + msg.rate);
       console.log ("Pitch: " + msg.pitch);
-      //document.getElementById('rate').value = msg.rate
-      //document.getElementById('pitch').value = msg.pitch
+      //$('#rate').val(msg.rate);
+      //$('#pitch').val(msg.pitch);
     
       //	msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google franais"; })[0];
-      msg.lang = "fr-FR";
+      msg.lang = e.defaults.language_target;
     
       // Queue this utterance.
       console.log ("Msg: " + msg.text);
@@ -231,16 +231,81 @@ e = {
       window.speechSynthesis.speak(msg);
     
       msg.onstart = function(event) {
-          document.getElementById('button_play').innerHTML = "Playing";
-          document.getElementById('button_play').setAttribute("disabled", "disabled");
+          $('#button_play').text("Playing");
+          $('#button_play').attr("disabled", "disabled");
           //disabled="disabled"
       };
     
       msg.onend = function(event) {
-          document.getElementById('button_play').innerHTML = "Play audio";
-          document.getElementById('button_play').removeAttribute("disabled");
+          $('#button_play').text("Play audio");
+          $('#button_play').removeAttr("disabled");
       };
-    }
+    },
+    
+    // from french-speaking:
+    
+    checkAnswer: function(inputPhrase) {
+        // Check current input text with previous spoken phrase
+        //var lowerCaseInput = speechMsgInput.value;
+        var lowerCaseInput = inputPhrase;
+        lowerCaseInput = lowerCaseInput.toLowerCase();
+        //var lowerCasePhrase = frenchPhraseList[randomNumber][0];
+        var lowerCasePhrase = "" + e.defaults.current_phrase;
+    
+        lowerCasePhrase = lowerCasePhrase.toLowerCase();
+    
+        console.log("LOWER Case Phrase: " + lowerCasePhrase);
+        console.log("REMOVE DIACRITICS Phrase: " + e.functions.removeDiacritics(lowerCasePhrase));
+    
+        lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
+    
+        if (lowerCasePhrase == lowerCaseInput) {
+          e.defaults.incorrectAnswerCount=0;
+          $('#translation').text("");
+          console.log ("Correct!");
+          // Clear the text input
+          //$('#usersays').text("");
+            $('#usersays').val("");
+          //randomNumber = Math.floor((Math.random() * (listLength)));
+          //speak(frenchPhraseList[randomNumber][1]);
+          skipNextPhrase();
+        }
+        else
+        {
+          //speak(frenchPhraseList[randomNumber][1]);
+          printPhrase(e.defaults.current_phrase);
+          e.defaults.incorrectAnswerCount++;
+          if (e.defaults.incorrectAnswerCount > 3){
+            //$('#translation').text(frenchPhraseList[randomNumber][1]);
+            $('#translation').text(e.defaults.current_phrase);
+    
+          }
+          if (e.defaults.incorrectAnswerCount > 5){
+            //$('#help').text(frenchPhraseList[randomNumber][0]);
+            $('#help').text(e.defaults.current_phrase);
+          }
+        }
+    },    
+    
+    recordVoiceAnswer: function() {
+      var voiceRecognition = new webkitSpeechRecognition();
+      voiceRecognition.lang = e.defaults.language_target;
+      voiceRecognition.onresult = function(event) {
+        console.log("I heard this: " + event.results[0][0].transcript);
+        var spokenInput = event.results[0][0].transcript;
+        var spokenInputConfidence = event.results[0][0].confidence;
+        //$('#usersays').text("" + spokenInput);
+        $('#usersays').val("" + spokenInput);
+    
+        e.functions.checkAnswer(spokenInput);
+      }
+      voiceRecognition.onerror = function(event) {
+            console.log ("Recognition stopped! (error) " + event.error);
+            voiceRecognition.stop();
+      }
+      voiceRecognition.start();
+      console.log ("recognition started");
+    },    
     
   }
 }
