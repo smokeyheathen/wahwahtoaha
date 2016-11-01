@@ -26,7 +26,7 @@ e = {
         e.defaults.current_exercise = new_exercise;
         e.functions.get_new_phrase(e.defaults.current_exercise);
         e.functions.speak(e.defaults.current_phrase);
-    },    
+    },
     get_new_phrase: function(current_exercise){
       switch (current_exercise)
       {	case "number_year_recent":
@@ -217,6 +217,14 @@ e = {
     
     replayPhrase: function() {
       e.functions.speak(window.e.defaults.current_phrase);
+    },
+    search_tag: function(phrasesObj, tag) {
+      var results = jQuery.map(phrasesObj, function(obj) {
+        if(obj.tags.indexOf(tag) >= 0) {
+          return obj; // or return obj.name, whatever.
+        }
+      });
+      return results;
     },
 
     set_exercise_type: function(new_exercise) {
