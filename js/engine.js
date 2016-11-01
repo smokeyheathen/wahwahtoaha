@@ -72,6 +72,21 @@ e = {
      });
    
    },
+   load_phrases: function(base,target){
+      var language_pair = base + "-" + target;
+      console.log("loading /content/" + language_pair + "/" + language_pair + ".json");
+      var jqxhr = $.getJSON( "/content/" + language_pair + "/" + language_pair + ".json", function() {
+        //console.log( "loaded "+language_pair );
+      })
+      .done(function(data) {
+        console.log( "loaded "+language_pair );
+        e.phrases[base] = {};
+        e.phrases[base][target] = data;
+      })
+      .fail(function() {
+        console.error( "error loading " + language_pair );
+      });       
+   },
     
     // Fetch the list of voices and populate the voice options.
     loadVoices: function () {
@@ -313,6 +328,6 @@ e = {
       voiceRecognition.start();
       console.log ("recognition started");
     },     
-    
-  }
+  }, // end functions
+  phrases: {}
 }
