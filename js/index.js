@@ -30,6 +30,8 @@ $(document).ready(function() {
 	
 	$('#language-pair').text('Language: French (from English)');
 	
+	// load phrases from json
+	e.functions.load_phrases(e.defaults.language_base,e.defaults.language_target);
 });
 
 e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
