@@ -41,11 +41,19 @@ e = {
         case "number_money_small":
           var current_phrase = gn_money_cafe_restaurant();
         break;
+        case "test_phrases":
+          var current_phrase = e.functions.get_test_phrase();
+        break;
         default:
           var current_phrase = "je ne sais pas";
         break;
       }
       return current_phrase;
+    },
+    get_test_phrase(){
+      var phrases = e.phrases[e.defaults.language_base][e.defaults.language_target];
+      var phrase = phrases[gn_random_integer(0,phrases.length)];
+      return phrase.target; 
     },
     
     handleFileSelect:function(evt) {
