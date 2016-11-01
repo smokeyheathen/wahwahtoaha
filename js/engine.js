@@ -1,8 +1,15 @@
 e = {
   defaults:{
+    // speech api language lookup table
+    speech_api_languages: {
+      en: "en-GB",
+      fr: "fr-FR",
+      de: "de-DE"
+    },
+    
     // Set default base (users native) and target (what they want to learn) languages
-    language_base: "en-GB",
-    language_target: "fr-FR",
+    language_base: "en",
+    language_target: "fr",
     current_phrase: "",
     previous_phrase: "",
     next_phrase: "",
@@ -40,7 +47,7 @@ e = {
       }
       return current_phrase;
     },
-
+    
     handleFileSelect:function(evt) {
        var files = evt.target.files; // FileList object
    
@@ -223,7 +230,7 @@ e = {
       //$('#pitch').val(msg.pitch);
     
       //	msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google français"; })[0];
-      msg.lang = e.defaults.language_target;
+      msg.lang = e.defaults.speech_api_languages[e.defaults.language_target];
     
       // Queue this utterance.
       console.log ("Msg: " + msg.text);
@@ -289,7 +296,7 @@ e = {
     
     recordVoiceAnswer: function() {
       var voiceRecognition = new webkitSpeechRecognition();
-      voiceRecognition.lang = e.defaults.language_target;
+      voiceRecognition.lang = e.defaults.speech_api_languages[e.defaults.language_target];
       voiceRecognition.onresult = function(event) {
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
@@ -305,7 +312,7 @@ e = {
       }
       voiceRecognition.start();
       console.log ("recognition started");
-    },    
+    },     
     
   }
 }
