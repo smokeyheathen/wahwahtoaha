@@ -1,0 +1,1973 @@
+[
+ {
+   "base": "to be",
+   "target": "être",
+   "literal": "Literal",
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "i am",
+   "target": "je suis",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you are (informal)",
+   "target": "tu es",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he is, it is",
+   "target": "il est",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she is",
+   "target": "elle est",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we are",
+   "target": "nous sommes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you are (formal)",
+   "target": "vous êtes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they are (male, mixed)",
+   "target": "ils sont",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they are (female)",
+   "target": "elles sont",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to have",
+   "target": "avoir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "i have",
+   "target": "j'ai",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you have (informal)",
+   "target": "tu as",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he has, it has",
+   "target": "il a",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she has",
+   "target": "elle a",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we have",
+   "target": "nous avons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you have (formal)",
+   "target": "vous avez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they have (male, mixed)",
+   "target": "ils ont",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they are (female)",
+   "target": "elle ont",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to be able (can)",
+   "target": "pouvoir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "i can",
+   "target": "je peux",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you can (informal)",
+   "target": "tu peux",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he can",
+   "target": "il peut",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she can",
+   "target": "elle peut",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we can",
+   "target": "nous pouvons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you can (formal)",
+   "target": "vous pouvez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they can (male, mixed)",
+   "target": "ils peuvent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they can (female)",
+   "target": "elles peuvent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to do, to make",
+   "target": "faire",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I do",
+   "target": "je fais",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you do (informal)",
+   "target": "tu fais",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he does",
+   "target": "il fait",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she does",
+   "target": "elle fait",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we do",
+   "target": "nous faisons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you do (formal)",
+   "target": "vous faites",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they do (male, mixed)",
+   "target": "ils font",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they do (female)",
+   "target": "elles font",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to put, to place",
+   "target": "mettre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I put",
+   "target": "je mets",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you put (informal)",
+   "target": "tu mets",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he puts",
+   "target": "il met",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she puts",
+   "target": "elle met",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we put",
+   "target": "nous mettons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you put (formal)",
+   "target": "vous mettez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they put (male, mixed)",
+   "target": "ils mettent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they put (female, mixed)",
+   "target": "elles mettent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to say, to tell",
+   "target": "dire",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I say",
+   "target": "je dis",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you say (informal)",
+   "target": "tu dis",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he say",
+   "target": "il dit",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she says",
+   "target": "elle dit",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we say",
+   "target": "nous disons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you say (formal)",
+   "target": "vous dites",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they say (male, mixed)",
+   "target": "ils disent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they say (female)",
+   "target": "elles disent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to have to, must, to owe",
+   "target": "devoir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I have to",
+   "target": "je dois",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you have to (informal)",
+   "target": "tu dois",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he has to",
+   "target": "il doit",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she has to",
+   "target": "elle doit",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we have to",
+   "target": "nous devons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you have to (formal)",
+   "target": "vous devez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they have to (male, mixed)",
+   "target": "ils doivent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they have to (female)",
+   "target": "elles doivent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to take, to catch, to capture",
+   "target": "prendre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I take",
+   "target": "je prends",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you take (informal)",
+   "target": "tu prends",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he takes",
+   "target": "il prend",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she takes",
+   "target": "elle prend",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we take",
+   "target": "nous prenons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you take (formal)",
+   "target": "vous prenez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they take (male, mixed)",
+   "target": "ils prennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they take (female)",
+   "target": "elles prennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to give, to produce",
+   "target": "donner",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I give",
+   "target": "je donne",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you give (informal)",
+   "target": "tu donnes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he gives",
+   "target": "il donne",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she gives",
+   "target": "elle donne",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we give",
+   "target": "nous donnons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you give (formal)",
+   "target": "vous donnez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they give (male, mixed)",
+   "target": "ils donnent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they give (female)",
+   "target": "elles donnent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to go",
+   "target": "aller",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I go",
+   "target": "je vais",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you go (informal)",
+   "target": "tu vas",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he goes",
+   "target": "il va",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she goes",
+   "target": "elle va",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they go",
+   "target": "nous allons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you go (formal)",
+   "target": "vous allez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they go (male, mixed)",
+   "target": "ils vont",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they go (female)",
+   "target": "elles vont",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to want, to wish",
+   "target": "vouloir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I want",
+   "target": "je veux",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you want (informal)",
+   "target": "tu veux",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he wants",
+   "target": "il veut",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she wants",
+   "target": "elle veut",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we want",
+   "target": "nous voulons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you want (formal)",
+   "target": "vous voulez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they want (male, mixed)",
+   "target": "ils veulent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they want (female)",
+   "target": "elles veulent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to know",
+   "target": "savoir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I know",
+   "target": "je sais",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you know (informal)",
+   "target": "tu sais",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he knows",
+   "target": "il sait",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she knows",
+   "target": "elle sait",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we know",
+   "target": "nous savons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you know (formal)",
+   "target": "vous savez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they know (male, mixed)",
+   "target": "ils savent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they know (female)",
+   "target": "elles savent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to have to",
+   "target": "falloir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "It must be / it has to",
+   "target": "il faut",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "It must be / it has to (female)",
+   "target": "elle faut",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to see",
+   "target": "voir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I see",
+   "target": "je vois",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you see (informal)",
+   "target": "tu vois",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he sees",
+   "target": "il voit",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she sees",
+   "target": "elle voit",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we see",
+   "target": "nous voyons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you see (formal)",
+   "target": "vous voyez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they see (male, mixed)",
+   "target": "ils voient",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they see (female)",
+   "target": "elles voient",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to ask, to request",
+   "target": "demander",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I ask",
+   "target": "je demande",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you ask (informal)",
+   "target": "tu demandes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he asks",
+   "target": "il demande",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she asks",
+   "target": "elle demande",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we ask",
+   "target": "nous demandons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you ask (formal)",
+   "target": "vous demandez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they ask (male, mixed)",
+   "target": "ils demandent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they ask (female)",
+   "target": "elles demandent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to find, to discover",
+   "target": "trouver",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I find",
+   "target": "je trouve",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you find (informal)",
+   "target": "tu trouves",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he finds",
+   "target": "il trouve",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she finds",
+   "target": "elle trouve",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we find",
+   "target": "nous trouvons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you find (formal)",
+   "target": "vous trouvez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they find (male, mixed)",
+   "target": "ils trouvent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they find (female)",
+   "target": "elles trouvent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to return (something), to give back",
+   "target": "rendre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I give back",
+   "target": "je rends",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you give back (informal)",
+   "target": "tu rends",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he gives back",
+   "target": "il rend",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she gives back",
+   "target": "elle rend",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we give back",
+   "target": "nous rendons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you give back (formal)",
+   "target": "vous rendez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they give back (male, mixed)",
+   "target": "ils rendent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they give back (female)",
+   "target": "elles rendent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to come",
+   "target": "venir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I come",
+   "target": "je viens",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you come (informal)",
+   "target": "tu viens",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he comes",
+   "target": "il vient",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she comes",
+   "target": "elle vient",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we come",
+   "target": "nous venons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you come (formal)",
+   "target": "vous venez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they come (male, mixed)",
+   "target": "ils viennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they come (female)",
+   "target": "elles viennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to pass, to go past",
+   "target": "passer",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I pass",
+   "target": "je passe",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you pass (informal)",
+   "target": "tu passes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he passes",
+   "target": "il passe",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she passes",
+   "target": "elle passe",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we pass",
+   "target": "nous passons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you pass (formal)",
+   "target": "vous passez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they pass (male, mixed)",
+   "target": "ils passent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they pass (female)",
+   "target": "elles passent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to understand, to include, to comprehend",
+   "target": "comprendre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I understand",
+   "target": "je comprends",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you understand (informal)",
+   "target": "tu comprends",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he understands",
+   "target": "il comprend",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she understands",
+   "target": "elle comprend",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we understand",
+   "target": "nous comprenons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you understand (formal)",
+   "target": "vous comprenez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they understand (male, mixed)",
+   "target": "ils comprennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they understand (female)",
+   "target": "elles comprennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to stay, to remain",
+   "target": "rester",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I stay",
+   "target": "je reste",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you stay (informal)",
+   "target": "tu restes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he stays",
+   "target": "il reste",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she stays",
+   "target": "elle reste",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we stay",
+   "target": "nous restons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you stay (formal)",
+   "target": "vous restez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they stay (male, mixed)",
+   "target": "ils restent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they stay (female)",
+   "target": "elles restent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to hold, to keep",
+   "target": "tenir",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I hold",
+   "target": "je tiens",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you hold (informal)",
+   "target": "tu tiens",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he holds",
+   "target": "il tient",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she holds",
+   "target": "elle tient",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we hold",
+   "target": "nous tenons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you hold (formal)",
+   "target": "vous tenez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they hold (male, mixed)",
+   "target": "ils tiennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they hold (female)",
+   "target": "elles tiennent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to carry, to wear",
+   "target": "porter",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I carry",
+   "target": "je porte",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you carry (informal)",
+   "target": "tu portes",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he carries",
+   "target": "il porte",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she carries",
+   "target": "elle porte",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we carry",
+   "target": "nous portons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you carry (formal)",
+   "target": "vous portez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they carry (male, mixed)",
+   "target": "ils portent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they carry (female)",
+   "target": "elles portent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to speak, to talk",
+   "target": "parler",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I speak",
+   "target": "je parle",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you speak (informal)",
+   "target": "tu parles",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he speaks",
+   "target": "il parle",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she speaks",
+   "target": "elle parle",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we speak",
+   "target": "nous parlons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you speak (formal)",
+   "target": "vous parlez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they speak (male, mixed)",
+   "target": "ils parlent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they speak (female)",
+   "target": "elles parlent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "to show, to display",
+   "target": "montrer",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I show",
+   "target": "je montre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you show (informal)",
+   "target": "tu montres",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "he shows",
+   "target": "il montre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "she shows",
+   "target": "elle montre",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "we show",
+   "target": "nous montrons",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "you show (formal)",
+   "target": "vous montrez",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they show (male, mixed)",
+   "target": "ils montrent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+},
+ {
+   "base": "they show (female)",
+   "target": "elles montrent",
+   "literal": "",
+   "tags": [
+      "",
+      ""
+   ]
+}
+]
