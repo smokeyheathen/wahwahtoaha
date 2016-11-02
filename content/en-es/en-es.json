@@ -1,0 +1,110 @@
+[
+ {
+   "base": "to be",
+   "target": "ser",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "i am",
+   "target": "yo soy",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "you are (informal)",
+   "target": "tú eres",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "you are (formal)",
+   "target": "usted eres",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "he is, it is",
+   "target": "él es",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "it is",
+   "target": "es",
+   "literal": null,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "she is",
+   "target": "ella es",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "we are",
+   "target": "nosotros somos",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "you are (informal, plural)",
+   "target": "vosotros sois",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "you are (formal, plural)",
+   "target": "ustedes son",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "they are (male, mixed)",
+   "target": "ellos son",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "they are (female)",
+   "target": "ellas son",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+}
+]
