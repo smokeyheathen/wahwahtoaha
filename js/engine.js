@@ -98,7 +98,9 @@ e = {
       })
       .done(function(data) {
         console.log( "loaded "+language_pair );
+        if (typeof e.phrases[base] == 'undefined') {
         e.phrases[base] = {};
+        }
         e.phrases[base][target] = data;
       })
       .fail(function() {
