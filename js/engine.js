@@ -1,7 +1,7 @@
 e = {
   defaults:{
     // speech api language lookup table
-    speech_api_languages: {
+    speechApiLanguages: {
       en: "en-GB",
       fr: "fr-FR",
       de: "de-DE",
@@ -20,52 +20,52 @@ e = {
     },
     
     // Set default base (users native) and target (what they want to learn) languages
-    language_base: "en",
-    language_target: "fr",
-    current_phrase: "",
-    previous_phrase: "",
-    next_phrase: "",
+    languageBase: "en",
+    languageTarget: "fr",
+    currentPhrase: "",
+    previousPhrase: "",
+    nextPhrase: "",
     // define the current exercise
-    current_exercise: "number_year_recent",
+    currentExercise: "number_year_recent",
     incorrectAnswerCount: 0,
-    speech_rate: 1
+    speechRate: 1
   },
   functions: {
     arePhrasesLoaded(){
       
-      if (typeof e.phrases[e.defaults.language_base] == 'undefined' || typeof e.phrases[e.defaults.language_base][e.defaults.language_target] == 'undefined') {
+      if (typeof e.phrases[e.defaults.languageBase] == 'undefined' || typeof e.phrases[e.defaults.languageBase][e.defaults.languageTarget] == 'undefined') {
         return false;
       }
       return true;
     },
-    getNewPhrase(current_exercise){
-      switch (current_exercise)
+    getNewPhrase(currentExercise){
+      switch (currentExercise)
       {	case "number_year_recent":
-          var current_phrase = e.functions.gnYearRecent();
+          var currentPhrase = e.functions.gnYearRecent();
         break;
         case "number_year_historical":
-          var current_phrase = e.functions.gnYearHistorical();
+          var currentPhrase = e.functions.gnYearHistorical();
         break;
         case "number_age_human":
-          var current_phrase = e.functions.gnAgeHuman();
+          var currentPhrase = e.functions.gnAgeHuman();
         break;
         case "number_money_small":
-          var current_phrase = e.functions.gnMoneyCafeRestaurant();
+          var currentPhrase = e.functions.gnMoneyCafeRestaurant();
         break;
         case "test_phrases":
-          var current_phrase = e.functions.getTestPhrase();
+          var currentPhrase = e.functions.getTestPhrase();
         break;
         case "verbs":
-          var current_phrase = e.functions.getTestPhrase("verb");
+          var currentPhrase = e.functions.getTestPhrase("verb");
         break;
         default:
-          var current_phrase = "je ne sais pas";
+          var currentPhrase = "je ne sais pas";
         break;
       }
-      e.defaults.current_phrase = current_phrase;
+      e.defaults.currentPhrase = currentPhrase;
     },
     getTestPhrase(tag){
-      var phrases = e.phrases[e.defaults.language_base][e.defaults.language_target];
+      var phrases = e.phrases[e.defaults.languageBase][e.defaults.languageTarget];
       if (typeof tag !== 'undefined') {
         phrases = e.functions.searchTag(phrases, tag);
       }
@@ -156,11 +156,11 @@ e = {
        }
        
        // get language from local storage if available
-       var base = localStorage.getItem( 'language_base' );
-       var target = localStorage.getItem( 'language_target' );
+       var base = localStorage.getItem( 'languageBase' );
+       var target = localStorage.getItem( 'languageTarget' );
        if (!base || !target) {
-         base = e.defaults.language_base;
-         target = e.defaults.language_target;
+         base = e.defaults.languageBase;
+         target = e.defaults.languageTarget;
        }
        e.functions.setLanguageBase(base);
        e.functions.setLanguageTarget(target);
@@ -178,7 +178,7 @@ e = {
          e.functions.setLanguageTarget(target);
        });
        
-      e.functions.getNewPhrase(e.defaults.current_exercise);
+      e.functions.getNewPhrase(e.defaults.currentExercise);
       
       // Execute e.functions.loadVoices.
       e.functions.loadVoices();
@@ -192,21 +192,21 @@ e = {
    loadPhrases(base,target){
       // base and target are optional - use defaults if omitted
       if (typeof base == 'undefined' || typeof target == 'undefined') {
-        base = e.defaults.language_base;
-        target = e.defaults.language_target;
+        base = e.defaults.languageBase;
+        target = e.defaults.languageTarget;
       }
-      var language_pair = base + "-" + target;
-      console.log("loading /content/" + language_pair + "/" + language_pair + ".json");
-      var jqxhr = $.getJSON( "/content/" + language_pair + "/" + language_pair + ".json")
+      var languagePair = base + "-" + target;
+      console.log("loading /content/" + languagePair + "/" + languagePair + ".json");
+      var jqxhr = $.getJSON( "/content/" + languagePair + "/" + languagePair + ".json")
         .done(function(data) {
-          console.log( "loaded "+language_pair );
+          console.log( "loaded "+languagePair );
           if (typeof e.phrases[base] == 'undefined') {
             e.phrases[base] = {};
           }
           e.phrases[base][target] = data;
         })
         .fail(function() {
-          console.error( "error loading " + language_pair );
+          console.error( "error loading " + languagePair );
         });       
    },
     
@@ -341,45 +341,45 @@ e = {
       return results;
     },
 
-    setExerciseType(new_exercise) {
-      e.defaults.current_exercise = new_exercise;
-      e.functions.getNewPhrase(e.defaults.current_exercise);
+    setExerciseType(newExercise) {
+      e.defaults.currentExercise = newExercise;
+      e.functions.getNewPhrase(e.defaults.currentExercise);
       e.functions.speak();
     },
     setLanguageBase(base){
       console.log("base language changed to " + base);
-      e.defaults.language_base = base;
-      localStorage.setItem( 'language_base',base );
+      e.defaults.languageBase = base;
+      localStorage.setItem( 'languageBase',base );
       $('#base-language').val(base);
-      $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
+      $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.languageTarget] + ' (from ' + e.defaults.lang.en.languages[e.defaults.languageBase] + ')');
       if (!e.functions.arePhrasesLoaded()) {
         e.functions.loadPhrases();
       }
     },
     setLanguageTarget(target){
       console.log("target language changed to " + target);
-      e.defaults.language_target = target;
-      localStorage.setItem( 'language_target',target );
+      e.defaults.languageTarget = target;
+      localStorage.setItem( 'languageTarget',target );
       $('#target-language').val(target);
-      $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
-      $('#speech-msg').attr('placeholder', 'Type what you hear in '+e.defaults.lang.en.languages[e.defaults.language_target]+' here');
+      $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.languageTarget] + ' (from ' + e.defaults.lang.en.languages[e.defaults.languageBase] + ')');
+      $('#speech-msg').attr('placeholder', 'Type what you hear in '+e.defaults.lang.en.languages[e.defaults.languageTarget]+' here');
       if (!e.functions.arePhrasesLoaded()) {
         e.functions.loadPhrases();
       }      
     },    
-    setSpeechRate(new_speech_rate){
-      e.defaults.speech_rate = new_speech_rate;
+    setSpeechRate(newSpeechRate){
+      e.defaults.speechRate = newSpeechRate;
     },
     
     skipNextPhrase() {
-      e.functions.getNewPhrase(e.defaults.current_exercise);
+      e.functions.getNewPhrase(e.defaults.currentExercise);
       e.functions.speak();
     },
     
     // Create a new utterance for the specified text and add it to the queue.
     speak(text) {
       if (typeof text == 'undefined'){
-        text = e.defaults.current_phrase;
+        text = e.defaults.currentPhrase;
       }
       // Create a new instance of SpeechSynthesisUtterance.
       var msg = new SpeechSynthesisUtterance();
@@ -390,13 +390,13 @@ e = {
       // Set the attributes.
       msg.volume = 1; // parseFloat(volumeInput.value);
       // Rate needs to be between 0 and 10, default is 1
-      msg.rate = parseFloat((Math.random()*0.2)+e.defaults.speech_rate);// parseFloat(rateInput.value);
+      msg.rate = parseFloat((Math.random()*0.2)+e.defaults.speechRate);// parseFloat(rateInput.value);
       // Pitch needs to be between 0 and 2, 1 is the default
       msg.pitch = parseFloat((Math.random()*0.2)+0.9); // parseFloat(pitchInput.value);
       console.log ("Rate: " + msg.rate);
       console.log ("Pitch: " + msg.pitch);
 
-      msg.lang = e.defaults.speech_api_languages[e.defaults.language_target];
+      msg.lang = e.defaults.speechApiLanguages[e.defaults.languageTarget];
     
       // Queue this utterance.
       console.log ("Msg: " + msg.text);
@@ -418,7 +418,7 @@ e = {
     checkAnswer(inputPhrase) {
         // Check current input text with previous spoken phrase
         var lowerCaseInput = inputPhrase.toLowerCase();
-        var lowerCasePhrase = "" + e.defaults.current_phrase;
+        var lowerCasePhrase = "" + e.defaults.currentPhrase;
     
         lowerCasePhrase = lowerCasePhrase.toLowerCase();
     
@@ -440,14 +440,14 @@ e = {
         }
         else
         {
-          e.functions.printPhrase(e.defaults.current_phrase);
+          e.functions.printPhrase(e.defaults.currentPhrase);
           e.defaults.incorrectAnswerCount++;
           if (e.defaults.incorrectAnswerCount > 3){
-            $('#translation').text(e.defaults.current_phrase);
+            $('#translation').text(e.defaults.currentPhrase);
     
           }
           if (e.defaults.incorrectAnswerCount > 5){
-            $('#help').text(e.defaults.current_phrase);
+            $('#help').text(e.defaults.currentPhrase);
           }
         }
     },
@@ -462,7 +462,7 @@ e = {
     
     recordVoiceAnswer() {
       var voiceRecognition = new webkitSpeechRecognition();
-      voiceRecognition.lang = e.defaults.speech_api_languages[e.defaults.language_target];
+      voiceRecognition.lang = e.defaults.speechApiLanguages[e.defaults.languageTarget];
       voiceRecognition.onresult = function(event) {        
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
@@ -485,8 +485,8 @@ e = {
       $('#translation').text("");
       // Clear the text input
       $('#usersays').val("");
-      e.functions.getNewPhrase(e.defaults.current_exercise);
-      e.functions.printPhrase(e.defaults.current_phrase);
+      e.functions.getNewPhrase(e.defaults.currentExercise);
+      e.functions.printPhrase(e.defaults.currentPhrase);
     },    
   }, // end functions
   phrases: {}
