@@ -9,8 +9,8 @@ $(document).keydown(function(event){
 		// Get the text input element.
 		var speechMsgInput = $('#speech-msg').val();
 		lowerCaseInput = speechMsgInput.toLowerCase();
-		var lowerCasePhrase = "" + e.defaults.currentPhrase;
-		var lowerCasePhraseEnglish = "" + e.defaults.currentPhrase;
+		var lowerCasePhrase = "" + e.defaults.currentPhrase.target;
+		var lowerCasePhraseEnglish = "" + e.defaults.currentPhrase.target;
 
 		lowerCasePhrase = lowerCasePhrase.toLowerCase();
 		lowerCasePhraseEnglish = lowerCasePhraseEnglish.toLowerCase();
@@ -36,7 +36,7 @@ $(document).keydown(function(event){
 			if (e.defaults.incorrectAnswerCount > 3){
 			}
 			if (e.defaults.incorrectAnswerCount > 5){
-				$('#help').text(e.defaults.currentPhrase);
+				$('#help').text(e.defaults.currentPhrase.target);
 			}
 		}
    }
