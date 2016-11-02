@@ -38,7 +38,7 @@ e = {
       }
       return true;
     },
-    getNewPhrase: function(current_exercise){
+    getNewPhrase(current_exercise){
       switch (current_exercise)
       {	case "number_year_recent":
           var current_phrase = e.functions.gnYearRecent();
@@ -112,7 +112,7 @@ e = {
    
      // Parse local CSV file
      Papa.parse(files[0], {
-       complete: function(results) {
+       complete(results) {
    
          /*
          * TEMPORARILY assigning phrases telling to the data, so file select has no effect
@@ -131,7 +131,7 @@ e = {
      });
    
    },
-   loadPhrases: function(base,target){
+   loadPhrases(base,target){
       // base and target are optional - use defaults if omitted
       if (typeof base == 'undefined' || typeof target == 'undefined') {
         base = e.defaults.language_base;
@@ -155,7 +155,7 @@ e = {
    },
     
     // Fetch the list of voices and populate the voice options.
-    loadVoices: function () {
+    loadVoices () {
       // Fetch the available voices.
       var voices = speechSynthesis.getVoices();
     
@@ -178,7 +178,7 @@ e = {
      * @returns {string}
      * @see http://goo.gl/zCBxkM
      */
-    removeDiacritics: function(str) {
+    removeDiacritics(str) {
         var diacriticsMap = {
             A: /[\u0041\u24B6\uFF21\u00C0\u00C1\u00C2\u1EA6\u1EA4\u1EAA\u1EA8\u00C3\u0100\u0102\u1EB0\u1EAE\u1EB4\u1EB2\u0226\u01E0\u00C4\u01DE\u1EA2\u00C5\u01FA\u01CD\u0200\u0202\u1EA0\u1EAC\u1EB6\u1E00\u0104\u023A\u2C6F]/g,
             AA: /[\uA732]/g,
@@ -273,10 +273,10 @@ e = {
         return str;
     },
     
-    replayPhrase: function() {
+    replayPhrase() {
       e.functions.speak();
     },
-    searchTag: function(phrasesObj, tag) {
+    searchTag(phrasesObj, tag) {
       var results = jQuery.map(phrasesObj, function(obj) {
         if(obj.tags.indexOf(tag) >= 0) {
           return obj; // or return obj.name, whatever.
@@ -285,12 +285,12 @@ e = {
       return results;
     },
 
-    setExerciseType: function(new_exercise) {
+    setExerciseType(new_exercise) {
       e.defaults.current_exercise = new_exercise;
       e.functions.getNewPhrase(e.defaults.current_exercise);
       e.functions.speak();
     },    
-    setLanguageBase: function(base){
+    setLanguageBase(base){
       console.log("base language changed to " + base);
       e.defaults.language_base = base;
       localStorage.setItem( 'language_base',base );
@@ -300,7 +300,7 @@ e = {
         e.functions.loadPhrases();
       }
     },
-    setLanguageTarget: function(target){
+    setLanguageTarget(target){
       console.log("target language changed to " + target);
       e.defaults.language_target = target;
       localStorage.setItem( 'language_target',target );
@@ -312,17 +312,17 @@ e = {
         e.functions.loadPhrases();
       }      
     },    
-    setSpeechRate: function(new_speech_rate){
+    setSpeechRate(new_speech_rate){
       e.defaults.speech_rate = new_speech_rate;
     },
     
-    skipNextPhrase: function() {
+    skipNextPhrase() {
       e.functions.getNewPhrase(e.defaults.current_exercise);
       e.functions.speak();
     },
     
     // Create a new utterance for the specified text and add it to the queue.
-    speak: function(text) {
+    speak(text) {
       if (typeof text == 'undefined'){
         text = e.defaults.current_phrase;
       }
@@ -364,7 +364,7 @@ e = {
     
     // from french-speaking:
     
-    checkAnswer: function(inputPhrase) {
+    checkAnswer(inputPhrase) {
         // Check current input text with previous spoken phrase
         //var lowerCaseInput = speechMsgInput.value;
         var lowerCaseInput = inputPhrase;
@@ -417,7 +417,7 @@ e = {
       $('#translation').text(text);
     },
     
-    recordVoiceAnswer: function() {
+    recordVoiceAnswer() {
       var voiceRecognition = new webkitSpeechRecognition();
       voiceRecognition.lang = e.defaults.speech_api_languages[e.defaults.language_target];
       voiceRecognition.onresult = function(event) {
