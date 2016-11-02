@@ -28,8 +28,16 @@ $(document).ready(function() {
 		$('#msg').addClass('not-supported');
 	}
 	
-	$('#language-pair').text('Language: French (from English)');
-	
+	// get language from local storage if available
+	var base = localStorage.getItem( 'language_base' );
+	var target = localStorage.getItem( 'language_target' );
+	if (!base || !target) {
+		base = e.defaults.language_base;
+		target = e.defaults.language_target;
+  }
+	e.functions.set_language_base(base);
+	e.functions.set_language_target(target);
+		
 	// load phrases from json
 	e.functions.load_phrases(e.defaults.language_base,e.defaults.language_target);
 	
