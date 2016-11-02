@@ -4,7 +4,19 @@ e = {
     speech_api_languages: {
       en: "en-GB",
       fr: "fr-FR",
-      de: "de-DE"
+      de: "de-DE",
+      es: "es-ES"
+    },
+    // ui language file
+    lang: {
+      en: {
+        languages:{
+          en: "English",
+          fr: "French",
+          de: "German",
+          es: "Spanish"
+        }
+      }
     },
     
     // Set default base (users native) and target (what they want to learn) languages
