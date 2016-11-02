@@ -53,20 +53,6 @@ $(document).ready(function() {
 });
 
 e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
-var frenchPhraseList = ["",""];
-frenchPhraseList = phrases_telling;
-
-var randomNumber = Math.floor((Math.random() * 3));
-var listLength = frenchPhraseList.length;
-
-// Get the 'speak' button
-var button = $('#speak');
-
-// Get the attribute controls.
-//var voiceSelect = $('#voice');
-var volumeInput = $('#volume');
-var rateInput = $('#rate');
-var pitchInput = $('#pitch');
 
 // Execute e.functions.loadVoices.
 e.functions.loadVoices();
@@ -126,11 +112,6 @@ $(document).keydown(function(event){
  * Ideally get to the point of generating simple conversation
  */
 
-/*
- * Check for browser support
- */
-
-var phrasesToSay = ["Je ne sais pas", "Je ne comprends pas", "Je voudrais prendre un verre"];
 
 /*
  * FUNCTION: printPhrase(text)

@@ -345,7 +345,6 @@ e = {
     
       // Queue this utterance.
       console.log ("Msg: " + msg.text);
-      console.log ("List Length: " + listLength);
       window.speechSynthesis.speak(msg);
     
       msg.onstart = function(event) {
