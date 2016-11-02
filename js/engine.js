@@ -176,7 +176,7 @@ e = {
        $('#target-language').change(function() {
          var target = $('#target-language').val();
          e.functions.setLanguageTarget(target);
-       });   
+       });
        
       e.functions.getNewPhrase(e.defaults.current_exercise);
       
@@ -198,16 +198,16 @@ e = {
       var language_pair = base + "-" + target;
       console.log("loading /content/" + language_pair + "/" + language_pair + ".json");
       var jqxhr = $.getJSON( "/content/" + language_pair + "/" + language_pair + ".json")
-      .done(function(data) {
-        console.log( "loaded "+language_pair );
-        if (typeof e.phrases[base] == 'undefined') {
-          e.phrases[base] = {};
-        }
-        e.phrases[base][target] = data;
-      })
-      .fail(function() {
-        console.error( "error loading " + language_pair );
-      });       
+        .done(function(data) {
+          console.log( "loaded "+language_pair );
+          if (typeof e.phrases[base] == 'undefined') {
+            e.phrases[base] = {};
+          }
+          e.phrases[base][target] = data;
+        })
+        .fail(function() {
+          console.error( "error loading " + language_pair );
+        });       
    },
     
     // Fetch the list of voices and populate the voice options.
@@ -395,10 +395,7 @@ e = {
       msg.pitch = parseFloat((Math.random()*0.2)+0.9); // parseFloat(pitchInput.value);
       console.log ("Rate: " + msg.rate);
       console.log ("Pitch: " + msg.pitch);
-      //$('#rate').val(msg.rate);
-      //$('#pitch').val(msg.pitch);
-    
-      //	msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google franais"; })[0];
+
       msg.lang = e.defaults.speech_api_languages[e.defaults.language_target];
     
       // Queue this utterance.
@@ -408,7 +405,6 @@ e = {
       msg.onstart = function(event) {
           $('#button_play').text("Playing");
           $('#button_play').attr("disabled", "disabled");
-          //disabled="disabled"
       };
     
       msg.onend = function(event) {
@@ -421,43 +417,36 @@ e = {
     
     checkAnswer(inputPhrase) {
         // Check current input text with previous spoken phrase
-        //var lowerCaseInput = speechMsgInput.value;
-        var lowerCaseInput = inputPhrase;
-        lowerCaseInput = lowerCaseInput.toLowerCase();
-        //var lowerCasePhrase = frenchPhraseList[randomNumber][0];
+        var lowerCaseInput = inputPhrase.toLowerCase();
         var lowerCasePhrase = "" + e.defaults.current_phrase;
     
         lowerCasePhrase = lowerCasePhrase.toLowerCase();
     
-        console.log("LOWER Case Phrase: " + lowerCasePhrase);
-        console.log("REMOVE DIACRITICS Phrase: " + e.functions.removeDiacritics(lowerCasePhrase));
-    
+        // remove diacritics
         lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
         lowerCaseInput =  e.functions.removeDiacritics(lowerCaseInput);   
+
+        console.log("LOWER Case Phrase: " + lowerCasePhrase);
+        console.log("LOWER Case Input: " + lowerCaseInput);
     
         if (lowerCasePhrase == lowerCaseInput) {
           e.defaults.incorrectAnswerCount=0;
           $('#translation').text("");
           console.log ("Correct!");
+
           // Clear the text input
-          //$('#usersays').text("");
-            $('#usersays').val("");
-          //randomNumber = Math.floor((Math.random() * (listLength)));
-          //speak(frenchPhraseList[randomNumber][1]);
+          $('#usersays').val("");
           e.functions.skipNextSpeakingPhrase();
         }
         else
         {
-          //speak(frenchPhraseList[randomNumber][1]);
           e.functions.printPhrase(e.defaults.current_phrase);
           e.defaults.incorrectAnswerCount++;
           if (e.defaults.incorrectAnswerCount > 3){
-            //$('#translation').text(frenchPhraseList[randomNumber][1]);
             $('#translation').text(e.defaults.current_phrase);
     
           }
           if (e.defaults.incorrectAnswerCount > 5){
-            //$('#help').text(frenchPhraseList[randomNumber][0]);
             $('#help').text(e.defaults.current_phrase);
           }
         }
@@ -474,7 +463,7 @@ e = {
     recordVoiceAnswer() {
       var voiceRecognition = new webkitSpeechRecognition();
       voiceRecognition.lang = e.defaults.speech_api_languages[e.defaults.language_target];
-      voiceRecognition.onresult = function(event) {
+      voiceRecognition.onresult = function(event) {        
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
         var spokenInputConfidence = event.results[0][0].confidence;
@@ -493,11 +482,11 @@ e = {
     skipNextSpeakingPhrase(){
       console.log('skip');
           incorrectAnswerCount=0;
-          $('#translation').text("");
-          // Clear the text input
-          $('#usersays').val("");
-          e.functions.getNewPhrase(e.defaults.current_exercise);
-          e.functions.printPhrase(e.defaults.current_phrase);
+      $('#translation').text("");
+      // Clear the text input
+      $('#usersays').val("");
+      e.functions.getNewPhrase(e.defaults.current_exercise);
+      e.functions.printPhrase(e.defaults.current_phrase);
     },    
   }, // end functions
   phrases: {}
