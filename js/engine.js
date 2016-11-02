@@ -481,7 +481,7 @@ e = {
     // this is different from the listening function, so let's keep it here for now
     skipNextSpeakingPhrase(){
       console.log('skip');
-          incorrectAnswerCount=0;
+      e.defaults.incorrectAnswerCount=0;
       $('#translation').text("");
       // Clear the text input
       $('#usersays').val("");
