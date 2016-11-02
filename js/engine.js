@@ -97,6 +97,11 @@ e = {
    
    },
    load_phrases: function(base,target){
+      // base and target are optional - use defaults if omitted
+      if (typeof base == 'undefined' || typeof target == 'undefined') {
+        base = e.defaults.language_base;
+        target = e.defaults.language_target;
+      }
       var language_pair = base + "-" + target;
       console.log("loading /content/" + language_pair + "/" + language_pair + ".json");
       var jqxhr = $.getJSON( "/content/" + language_pair + "/" + language_pair + ".json", function() {
