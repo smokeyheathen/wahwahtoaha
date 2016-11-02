@@ -274,7 +274,7 @@ e = {
     },
     
     replayPhrase: function() {
-      e.functions.speak(window.e.defaults.current_phrase);
+      e.functions.speak();
     },
     searchTag: function(phrasesObj, tag) {
       var results = jQuery.map(phrasesObj, function(obj) {
@@ -288,7 +288,7 @@ e = {
     setExerciseType: function(new_exercise) {
       e.defaults.current_exercise = new_exercise;
       e.functions.getNewPhrase(e.defaults.current_exercise);
-      e.functions.speak(e.defaults.current_phrase);
+      e.functions.speak();
     },    
     setLanguageBase: function(base){
       console.log("base language changed to " + base);
@@ -318,11 +318,14 @@ e = {
     
     skipNextPhrase: function() {
       e.functions.getNewPhrase(e.defaults.current_exercise);
-      e.functions.speak(e.defaults.current_phrase);
+      e.functions.speak();
     },
     
     // Create a new utterance for the specified text and add it to the queue.
     speak: function(text) {
+      if (typeof text == 'undefined'){
+        text = e.defaults.current_phrase;
+      }
       // Create a new instance of SpeechSynthesisUtterance.
       var msg = new SpeechSynthesisUtterance();
     

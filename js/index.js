@@ -39,7 +39,7 @@ $(document).ready(function() {
 	e.functions.setLanguageTarget(target);
 		
 	// load phrases from json
-	e.functions.loadPhrases(e.defaults.language_base,e.defaults.language_target);
+	e.functions.loadPhrases();
 	
 	// change handlers for language selects:
 	$('#base-language').change(function() {
@@ -87,11 +87,11 @@ $(document).keydown(function(event){
 			// Clear the text input
 			$('#speech-msg').val("");
 			e.functions.getNewPhrase(e.defaults.current_exercise);
-			e.functions.speak(e.defaults.current_phrase);
+			e.functions.speak();
 		}
 		else
 		{
-			e.functions.speak(e.defaults.current_phrase);
+			e.functions.speak();
 			e.defaults.incorrectAnswerCount++;
 			if (e.defaults.incorrectAnswerCount > 3){
 			}
