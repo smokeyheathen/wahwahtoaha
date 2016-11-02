@@ -120,12 +120,9 @@ e = {
          results.data = phrases_telling;
    
          var listLength = results.data.length;
-         console.log("Array Length: ", listLength);
          var randomNumber = Math.floor((Math.random() * (listLength)));
          //e.functions.speak(phrasesToSay[randomNumber]);
-         console.log(results.data[randomNumber][0]);
          frenchPhraseList = results.data;
-         console.log(phrases_telling);
          console.log("frenchPhraseList: " + frenchPhraseList[randomNumber][0]);
        }
      });
@@ -142,7 +139,6 @@ e = {
        if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
          subpage = pathname[2];
        }
-       console.log('page:' + page + ' - subpage: ' + subpage);
          
        // load page into main content area
        $('#main').html($('#'+page).text());
@@ -150,7 +146,6 @@ e = {
        // update menu
        $('#navbar li').removeClass('active');
        $('#navbar li#'+page+'-menu').addClass('active');
-       console.log('#navbar li#'+page+'-menu');
      
        //Check for browser support
        if ('speechSynthesis' in window) {
@@ -202,9 +197,7 @@ e = {
       }
       var language_pair = base + "-" + target;
       console.log("loading /content/" + language_pair + "/" + language_pair + ".json");
-      var jqxhr = $.getJSON( "/content/" + language_pair + "/" + language_pair + ".json", function() {
-        //console.log( "loaded "+language_pair );
-      })
+      var jqxhr = $.getJSON( "/content/" + language_pair + "/" + language_pair + ".json")
       .done(function(data) {
         console.log( "loaded "+language_pair );
         if (typeof e.phrases[base] == 'undefined') {
@@ -371,7 +364,6 @@ e = {
       $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
       $('#speech-msg').attr('placeholder', 'Type what you hear in '+e.defaults.lang.en.languages[e.defaults.language_target]+' here');
       if (!e.functions.arePhrasesLoaded()) {
-        console.log("loading " + target);
         e.functions.loadPhrases();
       }      
     },    
@@ -476,7 +468,6 @@ e = {
      * output the specified text in the translation field
      */
     printPhrase(text) {
-      console.log($('#translation'));
       $('#translation').text(text);
     },
     
@@ -487,7 +478,6 @@ e = {
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
         var spokenInputConfidence = event.results[0][0].confidence;
-        //$('#usersays').text("" + spokenInput);
         $('#usersays').val("" + spokenInput);
     
         e.functions.checkAnswer(spokenInput);
