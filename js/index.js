@@ -32,6 +32,16 @@ $(document).ready(function() {
 	
 	// load phrases from json
 	e.functions.load_phrases(e.defaults.language_base,e.defaults.language_target);
+	
+	// change handlers for language selects:
+	$('#base-language').change(function() {
+		var base = $('#base-language').val();
+		e.functions.set_language_base(base);
+	});
+	$('#target-language').change(function() {
+		var target = $('#target-language').val();
+		e.functions.set_language_target(target);
+	});
 });
 
 e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
