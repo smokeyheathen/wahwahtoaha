@@ -19,7 +19,13 @@ e = {
     speech_rate: 1
   },
   functions: {
+    are_phrases_loaded(){
     
+      if (typeof e.phrases[e.defaults.language_base] == 'undefined' || typeof e.phrases[e.defaults.language_base][e.defaults.language_target] == 'undefined') {
+        return false;
+      }
+      return true;
+    },
     changed_excercise_type:function() {
         var new_exercise = "";
         new_exercise = "" +	$('#exercise').val();
