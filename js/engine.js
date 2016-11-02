@@ -38,13 +38,6 @@ e = {
       }
       return true;
     },
-    changed_excercise_type:function() {
-        var new_exercise = "";
-        new_exercise = "" +	$('#exercise').val();
-        e.defaults.current_exercise = new_exercise;
-        e.functions.get_new_phrase(e.defaults.current_exercise);
-        e.functions.speak(e.defaults.current_phrase);
-    },
     getNewPhrase: function(current_exercise){
       switch (current_exercise)
       {	case "number_year_recent":
