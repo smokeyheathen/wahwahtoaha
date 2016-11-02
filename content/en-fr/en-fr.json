@@ -2,7 +2,7 @@
  {
    "base": "to be",
    "target": "être",
-   "literal": "Literal",
+   "literal": 1,
    "tags": [
       "verb",
       "to be"
@@ -11,1962 +11,1962 @@
  {
    "base": "i am",
    "target": "je suis",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "you are (informal)",
    "target": "tu es",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "he is, it is",
    "target": "il est",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "she is",
    "target": "elle est",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "we are",
    "target": "nous sommes",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "you are (formal)",
    "target": "vous êtes",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "they are (male, mixed)",
    "target": "ils sont",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "they are (female)",
    "target": "elles sont",
-   "literal": "",
+   "literal": 1,
    "tags": [
-      "",
+      "verb",
       "to be"
    ]
 },
  {
    "base": "to have",
    "target": "avoir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "i have",
    "target": "j'ai",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you have (informal)",
    "target": "tu as",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he has, it has",
    "target": "il a",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she has",
    "target": "elle a",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we have",
    "target": "nous avons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you have (formal)",
    "target": "vous avez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they have (male, mixed)",
    "target": "ils ont",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they are (female)",
    "target": "elle ont",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to be able (can)",
    "target": "pouvoir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "i can",
    "target": "je peux",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you can (informal)",
    "target": "tu peux",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he can",
    "target": "il peut",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she can",
    "target": "elle peut",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we can",
    "target": "nous pouvons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you can (formal)",
    "target": "vous pouvez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they can (male, mixed)",
    "target": "ils peuvent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they can (female)",
    "target": "elles peuvent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to do, to make",
    "target": "faire",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I do",
    "target": "je fais",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you do (informal)",
    "target": "tu fais",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he does",
    "target": "il fait",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she does",
    "target": "elle fait",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we do",
    "target": "nous faisons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you do (formal)",
    "target": "vous faites",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they do (male, mixed)",
    "target": "ils font",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they do (female)",
    "target": "elles font",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to put, to place",
    "target": "mettre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I put",
    "target": "je mets",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you put (informal)",
    "target": "tu mets",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he puts",
    "target": "il met",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she puts",
    "target": "elle met",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we put",
    "target": "nous mettons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you put (formal)",
    "target": "vous mettez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they put (male, mixed)",
    "target": "ils mettent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they put (female, mixed)",
    "target": "elles mettent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to say, to tell",
    "target": "dire",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I say",
    "target": "je dis",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you say (informal)",
    "target": "tu dis",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he say",
    "target": "il dit",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she says",
    "target": "elle dit",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we say",
    "target": "nous disons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you say (formal)",
    "target": "vous dites",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they say (male, mixed)",
    "target": "ils disent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they say (female)",
    "target": "elles disent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to have to, must, to owe",
    "target": "devoir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I have to",
    "target": "je dois",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you have to (informal)",
    "target": "tu dois",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he has to",
    "target": "il doit",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she has to",
    "target": "elle doit",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we have to",
    "target": "nous devons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you have to (formal)",
    "target": "vous devez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they have to (male, mixed)",
    "target": "ils doivent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they have to (female)",
    "target": "elles doivent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to take, to catch, to capture",
    "target": "prendre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I take",
    "target": "je prends",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you take (informal)",
    "target": "tu prends",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he takes",
    "target": "il prend",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she takes",
    "target": "elle prend",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we take",
    "target": "nous prenons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you take (formal)",
    "target": "vous prenez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they take (male, mixed)",
    "target": "ils prennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they take (female)",
    "target": "elles prennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to give, to produce",
    "target": "donner",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I give",
    "target": "je donne",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you give (informal)",
    "target": "tu donnes",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he gives",
    "target": "il donne",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she gives",
    "target": "elle donne",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we give",
    "target": "nous donnons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you give (formal)",
    "target": "vous donnez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they give (male, mixed)",
    "target": "ils donnent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they give (female)",
    "target": "elles donnent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to go",
    "target": "aller",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I go",
    "target": "je vais",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you go (informal)",
    "target": "tu vas",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he goes",
    "target": "il va",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she goes",
    "target": "elle va",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they go",
    "target": "nous allons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you go (formal)",
    "target": "vous allez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they go (male, mixed)",
    "target": "ils vont",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they go (female)",
    "target": "elles vont",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to want, to wish",
    "target": "vouloir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I want",
    "target": "je veux",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you want (informal)",
    "target": "tu veux",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he wants",
    "target": "il veut",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she wants",
    "target": "elle veut",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we want",
    "target": "nous voulons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you want (formal)",
    "target": "vous voulez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they want (male, mixed)",
    "target": "ils veulent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they want (female)",
    "target": "elles veulent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to know",
    "target": "savoir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I know",
    "target": "je sais",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you know (informal)",
    "target": "tu sais",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he knows",
    "target": "il sait",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she knows",
    "target": "elle sait",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we know",
    "target": "nous savons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you know (formal)",
    "target": "vous savez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they know (male, mixed)",
    "target": "ils savent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they know (female)",
    "target": "elles savent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to have to",
    "target": "falloir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "It must be / it has to",
    "target": "il faut",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "It must be / it has to (female)",
    "target": "elle faut",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to see",
    "target": "voir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I see",
    "target": "je vois",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you see (informal)",
    "target": "tu vois",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he sees",
    "target": "il voit",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she sees",
    "target": "elle voit",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we see",
    "target": "nous voyons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you see (formal)",
    "target": "vous voyez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they see (male, mixed)",
    "target": "ils voient",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they see (female)",
    "target": "elles voient",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to ask, to request",
    "target": "demander",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I ask",
    "target": "je demande",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you ask (informal)",
    "target": "tu demandes",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he asks",
    "target": "il demande",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she asks",
    "target": "elle demande",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we ask",
    "target": "nous demandons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you ask (formal)",
    "target": "vous demandez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they ask (male, mixed)",
    "target": "ils demandent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they ask (female)",
    "target": "elles demandent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to find, to discover",
    "target": "trouver",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I find",
    "target": "je trouve",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you find (informal)",
    "target": "tu trouves",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he finds",
    "target": "il trouve",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she finds",
    "target": "elle trouve",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we find",
    "target": "nous trouvons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you find (formal)",
    "target": "vous trouvez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they find (male, mixed)",
    "target": "ils trouvent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they find (female)",
    "target": "elles trouvent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to return (something), to give back",
    "target": "rendre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I give back",
    "target": "je rends",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you give back (informal)",
    "target": "tu rends",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he gives back",
    "target": "il rend",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she gives back",
    "target": "elle rend",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we give back",
    "target": "nous rendons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you give back (formal)",
    "target": "vous rendez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they give back (male, mixed)",
    "target": "ils rendent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they give back (female)",
    "target": "elles rendent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to come",
    "target": "venir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I come",
    "target": "je viens",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you come (informal)",
    "target": "tu viens",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he comes",
    "target": "il vient",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she comes",
    "target": "elle vient",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we come",
    "target": "nous venons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you come (formal)",
    "target": "vous venez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they come (male, mixed)",
    "target": "ils viennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they come (female)",
    "target": "elles viennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to pass, to go past",
    "target": "passer",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I pass",
    "target": "je passe",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you pass (informal)",
    "target": "tu passes",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he passes",
    "target": "il passe",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she passes",
    "target": "elle passe",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we pass",
    "target": "nous passons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you pass (formal)",
    "target": "vous passez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they pass (male, mixed)",
    "target": "ils passent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they pass (female)",
    "target": "elles passent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to understand, to include, to comprehend",
    "target": "comprendre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I understand",
    "target": "je comprends",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you understand (informal)",
    "target": "tu comprends",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he understands",
    "target": "il comprend",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she understands",
    "target": "elle comprend",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we understand",
    "target": "nous comprenons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you understand (formal)",
    "target": "vous comprenez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they understand (male, mixed)",
    "target": "ils comprennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they understand (female)",
    "target": "elles comprennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to stay, to remain",
    "target": "rester",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I stay",
    "target": "je reste",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you stay (informal)",
    "target": "tu restes",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he stays",
    "target": "il reste",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she stays",
    "target": "elle reste",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we stay",
    "target": "nous restons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you stay (formal)",
    "target": "vous restez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they stay (male, mixed)",
    "target": "ils restent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they stay (female)",
    "target": "elles restent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to hold, to keep",
    "target": "tenir",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I hold",
    "target": "je tiens",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you hold (informal)",
    "target": "tu tiens",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he holds",
    "target": "il tient",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she holds",
    "target": "elle tient",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we hold",
    "target": "nous tenons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you hold (formal)",
    "target": "vous tenez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they hold (male, mixed)",
    "target": "ils tiennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they hold (female)",
    "target": "elles tiennent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to carry, to wear",
    "target": "porter",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I carry",
    "target": "je porte",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you carry (informal)",
    "target": "tu portes",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he carries",
    "target": "il porte",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she carries",
    "target": "elle porte",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we carry",
    "target": "nous portons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you carry (formal)",
    "target": "vous portez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they carry (male, mixed)",
    "target": "ils portent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they carry (female)",
    "target": "elles portent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to speak, to talk",
    "target": "parler",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I speak",
    "target": "je parle",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you speak (informal)",
    "target": "tu parles",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he speaks",
    "target": "il parle",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she speaks",
    "target": "elle parle",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we speak",
    "target": "nous parlons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you speak (formal)",
    "target": "vous parlez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they speak (male, mixed)",
    "target": "ils parlent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they speak (female)",
    "target": "elles parlent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "to show, to display",
    "target": "montrer",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "I show",
    "target": "je montre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you show (informal)",
    "target": "tu montres",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "he shows",
    "target": "il montre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "she shows",
    "target": "elle montre",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "we show",
    "target": "nous montrons",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "you show (formal)",
    "target": "vous montrez",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they show (male, mixed)",
    "target": "ils montrent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 },
  {
    "base": "they show (female)",
    "target": "elles montrent",
-   "literal": "",
+   "literal": null,
    "tags": [
-      "",
+      "verb",
       ""
    ]
 }

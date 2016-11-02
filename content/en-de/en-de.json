@@ -1,0 +1,236 @@
+[
+ {
+   "base": "to be",
+   "target": "zu sein",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "i am",
+   "target": "ich bin",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "you are (informal)",
+   "target": "Du bist",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "he is",
+   "target": "er ist",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "it is",
+   "target": "es ist",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "she is",
+   "target": "sie ist",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "we are",
+   "target": "wir sind",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "you are (formal)",
+   "target": "Sie sind",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "they are",
+   "target": "sie sind",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be"
+   ]
+},
+ {
+   "base": "to have",
+   "target": "zu sein",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "i have",
+   "target": "ich habe",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "you have (informal)",
+   "target": "Du hast",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "he has",
+   "target": "er hat",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "it has",
+   "target": "es hat",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "she has",
+   "target": "sie hat",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "we have",
+   "target": "wir haben",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "you have (formal)",
+   "target": "Sie haben",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "they have (male, mixed)",
+   "target": "sie haben",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to have"
+   ]
+},
+ {
+   "base": "to be able (can)",
+   "target": "zu können",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "i can",
+   "target": "ich kann",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "you can (informal)",
+   "target": "Du kannst",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "he can",
+   "target": "er kann",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "she can",
+   "target": "sie kann",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "we can",
+   "target": "wir können",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "you can (formal)",
+   "target": "Sie können",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+},
+ {
+   "base": "they can",
+   "target": "sie können",
+   "literal": 1,
+   "tags": [
+      "verb",
+      "to be able"
+   ]
+}
+]
