@@ -64,7 +64,7 @@ e = {
           var currentPhrase = "je ne sais pas";
         break;
       }
-      e.defaults.currentPhrase = currentPhrase;
+      e.defaults.currentPhrase = currentPhrase;   
     },
     getTestPhrase(tag){
       var phrases = e.phrases[e.defaults.languageBase][e.defaults.languageTarget];
@@ -76,7 +76,7 @@ e = {
         return "error - no phrases";
       }
       var phrase = phrases[e.functions.gnRandomInteger(0,phrases.length)];
-      return phrase.target; 
+      return phrase; 
     },
     
     // generate_phrase_random_integer
@@ -88,25 +88,25 @@ e = {
     // Return a very common year, likely to be in the news or similar
     gnYearRecent(){
       var year = e.functions.gnRandomInteger(1990,2020);
-      return year;
+      return {base: year, target: year};
     },
 
     // Return a year used in historical contexts
     gnYearHistorical(){
       var year = e.functions.gnRandomInteger(100,1800);
-      return year;
+      return {base: year, target: year};
     },
 
     // Return a typical human age
     gnAgeHuman(){
       var age = e.functions.gnRandomInteger(1,115);
-      return age;
+      return {base: age, target: age};
     },
 
     // Return an amount of money for cafe or restaurant
     gnMoneyCafeRestaurant(){
       var money = e.functions.gnRandomInteger(2,99) + " euros " + e.functions.gnRandomInteger(2,99);
-      return money;
+      return {base: money, target: money};
     },    
     
     handleFileSelect:function(evt) {
@@ -351,7 +351,7 @@ e = {
       if (e.defaults.page == 'speaking') {
         e.functions.skipNextSpeakingPhrase();
       } else if (e.defaults.page == 'listening') {
-      e.functions.speak();
+        e.functions.speak();
       }
       
     },
@@ -388,7 +388,7 @@ e = {
     // Create a new utterance for the specified text and add it to the queue.
     speak(text) {
       if (typeof text == 'undefined'){
-        text = e.defaults.currentPhrase;
+        text = e.defaults.currentPhrase.target;
       }
       // Create a new instance of SpeechSynthesisUtterance.
       var msg = new SpeechSynthesisUtterance();
@@ -427,7 +427,7 @@ e = {
     checkAnswer(inputPhrase) {
         // Check current input text with previous spoken phrase
         var lowerCaseInput = inputPhrase.toLowerCase();
-        var lowerCasePhrase = "" + e.defaults.currentPhrase;
+        var lowerCasePhrase = "" + e.defaults.currentPhrase.target;
     
         lowerCasePhrase = lowerCasePhrase.toLowerCase();
     
@@ -435,9 +435,9 @@ e = {
         lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
         lowerCaseInput =  e.functions.removeDiacritics(lowerCaseInput);   
 
-        console.log("LOWER Case Phrase: " + lowerCasePhrase);
         console.log("LOWER Case Input: " + lowerCaseInput);
-    
+        console.log("LOWER Case Phrase: " + lowerCasePhrase);
+        
         if (lowerCasePhrase == lowerCaseInput) {
           e.defaults.incorrectAnswerCount=0;
           $('#translation').text("");
@@ -449,14 +449,14 @@ e = {
         }
         else
         {
-          e.functions.printPhrase(e.defaults.currentPhrase);
+          e.functions.printPhrase(e.defaults.currentPhrase.target);
           e.defaults.incorrectAnswerCount++;
           if (e.defaults.incorrectAnswerCount > 3){
-            $('#translation').text(e.defaults.currentPhrase);
+            $('#translation').text(e.defaults.currentPhrase.target);
     
           }
           if (e.defaults.incorrectAnswerCount > 5){
-            $('#help').text(e.defaults.currentPhrase);
+            $('#help').text(e.defaults.currentPhrase.target);
           }
         }
     },
@@ -476,7 +476,7 @@ e = {
         console.log("I heard this: " + event.results[0][0].transcript);
         var spokenInput = event.results[0][0].transcript;
         var spokenInputConfidence = event.results[0][0].confidence;
-        $('#usersays').val("" + spokenInput);
+        $('#usersays').val("" + spokenInput);    
     
         e.functions.checkAnswer(spokenInput);
       }
@@ -495,7 +495,7 @@ e = {
       // Clear the text input
       $('#usersays').val("");
       e.functions.getNewPhrase(e.defaults.currentExercise);
-      e.functions.printPhrase(e.defaults.currentPhrase);
+      e.functions.printPhrase(e.defaults.currentPhrase.base);
     },    
   }, // end functions
   phrases: {}
