@@ -267,6 +267,28 @@ e = {
       e.functions.get_new_phrase(e.defaults.current_exercise);
       e.functions.speak(e.defaults.current_phrase);
     },    
+    set_language_base: function(base){
+      console.log("base language changed to " + base);
+      e.defaults.language_base = base;
+      localStorage.setItem( 'language_base',base );
+      $('#base-language').val(base);
+      $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
+      if (!e.functions.are_phrases_loaded()) {
+        e.functions.load_phrases();
+      }
+    },
+    set_language_target: function(target){
+      console.log("target language changed to " + target);
+      e.defaults.language_target = target;
+      localStorage.setItem( 'language_target',target );
+      $('#target-language').val(target);
+      $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
+      $('#speech-msg').attr('placeholder', 'Type what you hear in '+e.defaults.lang.en.languages[e.defaults.language_target]+' here');
+      if (!e.functions.are_phrases_loaded()) {
+        console.log("loading " + target);
+        e.functions.load_phrases();
+      }      
+    },    
     set_speech_rate: function(new_speech_rate){
       e.defaults.speech_rate = new_speech_rate;
     },
