@@ -30,7 +30,7 @@ function skipNextPhrase(){
 			$('#translation').text("");
 			// Clear the text input
 			$('#usersays').val("");
-			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
+			e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
 			printPhrase(e.defaults.current_phrase);
 }
 

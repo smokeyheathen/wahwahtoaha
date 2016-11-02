@@ -35,24 +35,24 @@ $(document).ready(function() {
 		base = e.defaults.language_base;
 		target = e.defaults.language_target;
   }
-	e.functions.set_language_base(base);
-	e.functions.set_language_target(target);
+	e.functions.setLanguageBase(base);
+	e.functions.setLanguageTarget(target);
 		
 	// load phrases from json
-	e.functions.load_phrases(e.defaults.language_base,e.defaults.language_target);
+	e.functions.loadPhrases(e.defaults.language_base,e.defaults.language_target);
 	
 	// change handlers for language selects:
 	$('#base-language').change(function() {
 		var base = $('#base-language').val();
-		e.functions.set_language_base(base);
+		e.functions.setLanguageBase(base);
 	});
 	$('#target-language').change(function() {
 		var target = $('#target-language').val();
-		e.functions.set_language_target(target);
+		e.functions.setLanguageTarget(target);
 	});
 });
 
-e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
+e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
 var frenchPhraseList = ["",""];
 frenchPhraseList = phrases_telling;
 
@@ -100,7 +100,7 @@ $(document).keydown(function(event){
 			console.log ("Correct!");
 			// Clear the text input
 			$('#speech-msg').val("");
-			e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
+			e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
 			e.functions.speak(e.defaults.current_phrase);
 		}
 		else

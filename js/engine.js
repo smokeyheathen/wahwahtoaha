@@ -31,7 +31,7 @@ e = {
     speech_rate: 1
   },
   functions: {
-    are_phrases_loaded(){
+    arePhrasesLoaded(){
     
       if (typeof e.phrases[e.defaults.language_base] == 'undefined' || typeof e.phrases[e.defaults.language_base][e.defaults.language_target] == 'undefined') {
         return false;
@@ -45,7 +45,7 @@ e = {
         e.functions.get_new_phrase(e.defaults.current_exercise);
         e.functions.speak(e.defaults.current_phrase);
     },
-    get_new_phrase: function(current_exercise){
+    getNewPhrase: function(current_exercise){
       switch (current_exercise)
       {	case "number_year_recent":
           var current_phrase = gn_year_recent();
@@ -60,10 +60,10 @@ e = {
           var current_phrase = gn_money_cafe_restaurant();
         break;
         case "test_phrases":
-          var current_phrase = e.functions.get_test_phrase();
+          var current_phrase = e.functions.getTestPhrase();
         break;
         case "verbs":
-          var current_phrase = e.functions.get_test_phrase("verb");
+          var current_phrase = e.functions.getTestPhrase("verb");
         break;
         default:
           var current_phrase = "je ne sais pas";
@@ -71,10 +71,10 @@ e = {
       }
       return current_phrase;
     },
-    get_test_phrase(tag){
+    getTestPhrase(tag){
       var phrases = e.phrases[e.defaults.language_base][e.defaults.language_target];
       if (typeof tag !== 'undefined') {
-        phrases = e.functions.search_tag(phrases, tag);
+        phrases = e.functions.searchTag(phrases, tag);
       }
       if (typeof phrases == 'undefined') {
         console.error("no phrases");
@@ -108,7 +108,7 @@ e = {
      });
    
    },
-   load_phrases: function(base,target){
+   loadPhrases: function(base,target){
       // base and target are optional - use defaults if omitted
       if (typeof base == 'undefined' || typeof target == 'undefined') {
         base = e.defaults.language_base;
@@ -253,7 +253,7 @@ e = {
     replayPhrase: function() {
       e.functions.speak(window.e.defaults.current_phrase);
     },
-    search_tag: function(phrasesObj, tag) {
+    searchTag: function(phrasesObj, tag) {
       var results = jQuery.map(phrasesObj, function(obj) {
         if(obj.tags.indexOf(tag) >= 0) {
           return obj; // or return obj.name, whatever.
@@ -262,39 +262,39 @@ e = {
       return results;
     },
 
-    set_exercise_type: function(new_exercise) {
+    setExerciseType: function(new_exercise) {
       e.defaults.current_exercise = new_exercise;
-      e.functions.get_new_phrase(e.defaults.current_exercise);
+      e.functions.getNewPhrase(e.defaults.current_exercise);
       e.functions.speak(e.defaults.current_phrase);
     },    
-    set_language_base: function(base){
+    setLanguageBase: function(base){
       console.log("base language changed to " + base);
       e.defaults.language_base = base;
       localStorage.setItem( 'language_base',base );
       $('#base-language').val(base);
       $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
-      if (!e.functions.are_phrases_loaded()) {
-        e.functions.load_phrases();
+      if (!e.functions.arePhrasesLoaded()) {
+        e.functions.loadPhrases();
       }
     },
-    set_language_target: function(target){
+    setLanguageTarget: function(target){
       console.log("target language changed to " + target);
       e.defaults.language_target = target;
       localStorage.setItem( 'language_target',target );
       $('#target-language').val(target);
       $('#language-pair').text('Language: ' + e.defaults.lang.en.languages[e.defaults.language_target] + ' (from ' + e.defaults.lang.en.languages[e.defaults.language_base] + ')');
       $('#speech-msg').attr('placeholder', 'Type what you hear in '+e.defaults.lang.en.languages[e.defaults.language_target]+' here');
-      if (!e.functions.are_phrases_loaded()) {
+      if (!e.functions.arePhrasesLoaded()) {
         console.log("loading " + target);
-        e.functions.load_phrases();
+        e.functions.loadPhrases();
       }      
     },    
-    set_speech_rate: function(new_speech_rate){
+    setSpeechRate: function(new_speech_rate){
       e.defaults.speech_rate = new_speech_rate;
     },
     
     skipNextPhrase: function() {
-      e.defaults.current_phrase = e.functions.get_new_phrase(e.defaults.current_exercise);
+      e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
       e.functions.speak(e.defaults.current_phrase);
     },
     
