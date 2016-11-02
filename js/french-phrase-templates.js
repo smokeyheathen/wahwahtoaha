@@ -40,44 +40,44 @@ function gp_year(){
 }
 
 function gp_date_recent(){
-	return gn_random_integer(1,28);
+	return gnRandomInteger(1,28);
 
 }
 
 // generate_phrase_random_integer
-function gn_random_integer(minimum,maximum){
+function gnRandomInteger(minimum,maximum){
 	var year = Math.floor(Math.random() * (maximum-minimum)) + minimum;
 	return year;
 }
 
 // Return a very common year, likely to be in the news or similar
-function gn_year_recent(){
-	var year = gn_random_integer(1990,2020);
+function gnYearRecent(){
+	var year = gnRandomInteger(1990,2020);
 	return year;
 }
 
 // Return a year used in historical contexts
-function gn_year_historical(){
-		var year = gn_random_integer(100,1800);
+function gnYearHistorical(){
+		var year = gnRandomInteger(100,1800);
 		return year;
 }
 
 // Return a typical human age
-function gn_age_human(){
-		var age = gn_random_integer(1,115);
+function gnAgeHuman(){
+		var age = gnRandomInteger(1,115);
 		return age;
 }
 
 // Return an amount of money for cafe or restaurant
-function gn_money_cafe_restaurant(){
-	var money = gn_random_integer(2,99) + " euros " + gn_random_integer(2,99);
+function gnMoneyCafeRestaurant(){
+	var money = gnRandomInteger(2,99) + " euros " + gnRandomInteger(2,99);
 	return money;
 }
 
 function get_random_array_element(somearray){
 	var arrayrow;
 	var arraymaxrow = arrayrow.length() - 1;
-	arrayrow = gn_random_integer(0,arraymaxrow);
+	arrayrow = gnRandomInteger(0,arraymaxrow);
 	return somearray(arrayrow);
 }
 

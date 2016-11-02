@@ -48,16 +48,16 @@ e = {
     getNewPhrase: function(current_exercise){
       switch (current_exercise)
       {	case "number_year_recent":
-          var current_phrase = gn_year_recent();
+          var current_phrase = gnYearRecent();
         break;
         case "number_year_historical":
-          var current_phrase = gn_year_historical();
+          var current_phrase = gnYearHistorical();
         break;
         case "number_age_human":
-          var current_phrase = gn_age_human();
+          var current_phrase = gnAgeHuman();
         break;
         case "number_money_small":
-          var current_phrase = gn_money_cafe_restaurant();
+          var current_phrase = gnMoneyCafeRestaurant();
         break;
         case "test_phrases":
           var current_phrase = e.functions.getTestPhrase();
@@ -80,7 +80,7 @@ e = {
         console.error("no phrases");
         return "error - no phrases";
       }
-      var phrase = phrases[gn_random_integer(0,phrases.length)];
+      var phrase = phrases[gnRandomInteger(0,phrases.length)];
       return phrase.target; 
     },
     
