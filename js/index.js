@@ -1,55 +1,5 @@
 $(document).ready(function() {
-	
-	// parse the pathname to get page and subpage
-	var pathname = window.location.pathname.split('/');
-	var page = 'home';
-	var subpage = '';
-	if (typeof pathname[1] !== 'undefined' && pathname[1] !='') {
-    page = pathname[1];
-  }
-	if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
-    subpage = pathname[2];
-  }
-	console.log('page:' + page + ' - subpage: ' + subpage);
-		
-	// load page into main content area
-	$('#main').html($('#'+page).text());
-	
-	// update menu
-	$('#navbar li').removeClass('active');
-	$('#navbar li#'+page+'-menu').addClass('active');
-	console.log('#navbar li#'+page+'-menu');
-
-	//Check for browser support
-	if ('speechSynthesis' in window) {
-		$('#msg').html('Your browser <strong>supports</strong> speech synthesis.');
-	} else {
-		$('#msg').html('Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.');
-		$('#msg').addClass('not-supported');
-	}
-	
-	// get language from local storage if available
-	var base = localStorage.getItem( 'language_base' );
-	var target = localStorage.getItem( 'language_target' );
-	if (!base || !target) {
-		base = e.defaults.language_base;
-		target = e.defaults.language_target;
-  }
-	e.functions.setLanguageBase(base);
-	e.functions.setLanguageTarget(target);
-		
-	// load phrases from json
-	e.functions.loadPhrases();
-	
-	// change handlers for language selects:
-	$('#base-language').change(function() {
-		var base = $('#base-language').val();
-		e.functions.setLanguageBase(base);
-	});
-	$('#target-language').change(function() {
-		var target = $('#target-language').val();
-		e.functions.setLanguageTarget(target);
-	});
+	e.functions.init();
 });
 
 e.functions.getNewPhrase(e.defaults.current_exercise);

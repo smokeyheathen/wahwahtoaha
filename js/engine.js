@@ -32,7 +32,7 @@ e = {
   },
   functions: {
     arePhrasesLoaded(){
-    
+      
       if (typeof e.phrases[e.defaults.language_base] == 'undefined' || typeof e.phrases[e.defaults.language_base][e.defaults.language_target] == 'undefined') {
         return false;
       }
@@ -131,6 +131,58 @@ e = {
      });
    
    },
+    init(){
+       // parse the pathname to get page and subpage
+       var pathname = window.location.pathname.split('/');
+       var page = 'home';
+       var subpage = '';
+       if (typeof pathname[1] !== 'undefined' && pathname[1] !='') {
+         page = pathname[1];
+       }
+       if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
+         subpage = pathname[2];
+       }
+       console.log('page:' + page + ' - subpage: ' + subpage);
+         
+       // load page into main content area
+       $('#main').html($('#'+page).text());
+       
+       // update menu
+       $('#navbar li').removeClass('active');
+       $('#navbar li#'+page+'-menu').addClass('active');
+       console.log('#navbar li#'+page+'-menu');
+     
+       //Check for browser support
+       if ('speechSynthesis' in window) {
+         $('#msg').html('Your browser <strong>supports</strong> speech synthesis.');
+       } else {
+         $('#msg').html('Sorry your browser <strong>does not support</strong> speech synthesis.<br>Try this in <a href="http://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>.');
+         $('#msg').addClass('not-supported');
+       }
+       
+       // get language from local storage if available
+       var base = localStorage.getItem( 'language_base' );
+       var target = localStorage.getItem( 'language_target' );
+       if (!base || !target) {
+         base = e.defaults.language_base;
+         target = e.defaults.language_target;
+       }
+       e.functions.setLanguageBase(base);
+       e.functions.setLanguageTarget(target);
+         
+       // load phrases from json
+       e.functions.loadPhrases();
+       
+       // change handlers for language selects:
+       $('#base-language').change(function() {
+         var base = $('#base-language').val();
+         e.functions.setLanguageBase(base);
+       });
+       $('#target-language').change(function() {
+         var target = $('#target-language').val();
+         e.functions.setLanguageTarget(target);
+       });   
+    },
    loadPhrases(base,target){
       // base and target are optional - use defaults if omitted
       if (typeof base == 'undefined' || typeof target == 'undefined') {
@@ -145,7 +197,7 @@ e = {
       .done(function(data) {
         console.log( "loaded "+language_pair );
         if (typeof e.phrases[base] == 'undefined') {
-        e.phrases[base] = {};
+          e.phrases[base] = {};
         }
         e.phrases[base][target] = data;
       })
@@ -289,7 +341,7 @@ e = {
       e.defaults.current_exercise = new_exercise;
       e.functions.getNewPhrase(e.defaults.current_exercise);
       e.functions.speak();
-    },    
+    },
     setLanguageBase(base){
       console.log("base language changed to " + base);
       e.defaults.language_base = base;
@@ -406,7 +458,7 @@ e = {
             $('#help').text(e.defaults.current_phrase);
           }
         }
-    },    
+    },
     
     /*
      * FUNCTION: printPhrase(text)
@@ -435,7 +487,7 @@ e = {
       }
       voiceRecognition.start();
       console.log ("recognition started");
-    },     
+    },
     // this is different from the listening function, so let's keep it here for now
     skipNextSpeakingPhrase(){
       console.log('skip');
