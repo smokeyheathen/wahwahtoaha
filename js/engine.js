@@ -28,7 +28,9 @@ e = {
     // define the current exercise
     currentExercise: "number_year_recent",
     incorrectAnswerCount: 0,
-    speechRate: 1
+    speechRate: 1,
+    page: "home",
+    subpage: "",
   },
   functions: {
     arePhrasesLoaded(){
@@ -131,21 +133,19 @@ e = {
     init(){
        // parse the pathname to get page and subpage
        var pathname = window.location.pathname.split('/');
-       var page = 'home';
-       var subpage = '';
        if (typeof pathname[1] !== 'undefined' && pathname[1] !='') {
-         page = pathname[1];
+         e.defaults.page = pathname[1];
        }
        if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
-         subpage = pathname[2];
+         e.defaults.subpage = pathname[2];
        }
          
        // load page into main content area
-       $('#main').html($('#'+page).text());
+       $('#main').html($('#'+e.defaults.page).text());
        
        // update menu
        $('#navbar li').removeClass('active');
-       $('#navbar li#'+page+'-menu').addClass('active');
+       $('#navbar li#'+e.defaults.page+'-menu').addClass('active');
      
        //Check for browser support
        if ('speechSynthesis' in window) {
@@ -179,6 +179,10 @@ e = {
        });
        
       e.functions.getNewPhrase(e.defaults.currentExercise);
+      
+      if (e.defaults.page == 'speaking') {
+        e.functions.skipNextSpeakingPhrase();
+      }
       
       // Execute e.functions.loadVoices.
       e.functions.loadVoices();
@@ -344,7 +348,12 @@ e = {
     setExerciseType(newExercise) {
       e.defaults.currentExercise = newExercise;
       e.functions.getNewPhrase(e.defaults.currentExercise);
+      if (e.defaults.page == 'speaking') {
+        e.functions.skipNextSpeakingPhrase();
+      } else if (e.defaults.page == 'listening') {
       e.functions.speak();
+      }
+      
     },
     setLanguageBase(base){
       console.log("base language changed to " + base);
