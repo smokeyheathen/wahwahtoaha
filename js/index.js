@@ -123,7 +123,7 @@ $('#translation').text(text);
 }
 
 // this is different from the listening function, so let's keep it here for now
-function skipNextPhrase(){
+function skipNextSpeakingPhrase(){
 	console.log('skip');
 			incorrectAnswerCount=0;
 			$('#translation').text("");
@@ -134,5 +134,5 @@ function skipNextPhrase(){
 }
 
 //$(document).ready(function() {
-//skipNextPhrase();
+//skipNextSpeakingPhrase();
 //});

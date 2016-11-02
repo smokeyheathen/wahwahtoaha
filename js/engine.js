@@ -386,7 +386,7 @@ e = {
             $('#usersays').val("");
           //randomNumber = Math.floor((Math.random() * (listLength)));
           //speak(frenchPhraseList[randomNumber][1]);
-          skipNextPhrase();
+          skipNextSpeakingPhrase();
         }
         else
         {
