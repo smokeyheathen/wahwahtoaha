@@ -386,12 +386,12 @@ e = {
             $('#usersays').val("");
           //randomNumber = Math.floor((Math.random() * (listLength)));
           //speak(frenchPhraseList[randomNumber][1]);
-          skipNextSpeakingPhrase();
+          e.functions.skipNextSpeakingPhrase();
         }
         else
         {
           //speak(frenchPhraseList[randomNumber][1]);
-          printPhrase(e.defaults.current_phrase);
+          e.functions.printPhrase(e.defaults.current_phrase);
           e.defaults.incorrectAnswerCount++;
           if (e.defaults.incorrectAnswerCount > 3){
             //$('#translation').text(frenchPhraseList[randomNumber][1]);
@@ -404,6 +404,15 @@ e = {
           }
         }
     },    
+    
+    /*
+     * FUNCTION: printPhrase(text)
+     * output the specified text in the translation field
+     */
+    printPhrase(text) {
+      console.log($('#translation'));
+      $('#translation').text(text);
+    },
     
     recordVoiceAnswer: function() {
       var voiceRecognition = new webkitSpeechRecognition();
@@ -424,6 +433,16 @@ e = {
       voiceRecognition.start();
       console.log ("recognition started");
     },     
+    // this is different from the listening function, so let's keep it here for now
+    skipNextSpeakingPhrase(){
+      console.log('skip');
+          incorrectAnswerCount=0;
+          $('#translation').text("");
+          // Clear the text input
+          $('#usersays').val("");
+          e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
+          e.functions.printPhrase(e.defaults.current_phrase);
+    },    
   }, // end functions
   phrases: {}
 }
