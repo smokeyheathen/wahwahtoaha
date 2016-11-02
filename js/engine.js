@@ -306,6 +306,7 @@ e = {
         console.log("REMOVE DIACRITICS Phrase: " + e.functions.removeDiacritics(lowerCasePhrase));
     
         lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
+        lowerCaseInput =  e.functions.removeDiacritics(lowerCaseInput);   
     
         if (lowerCasePhrase == lowerCaseInput) {
           e.defaults.incorrectAnswerCount=0;
