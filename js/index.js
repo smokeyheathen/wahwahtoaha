@@ -8,6 +8,10 @@ $(document).keydown(function(event){
 
 		// Get the text input element.
 		var speechMsgInput = $('#speech-msg').val();
+		if (typeof speechMsgInput === 'undefined') {
+			return;
+      //speechMsgInput = $('#usersays').val();
+    }
 		lowerCaseInput = speechMsgInput.toLowerCase();
 		var lowerCasePhrase = "" + e.defaults.currentPhrase.target;
 		var lowerCasePhraseEnglish = "" + e.defaults.currentPhrase.target;
