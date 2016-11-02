@@ -2,16 +2,6 @@ $(document).ready(function() {
 	e.functions.init();
 });
 
-e.functions.getNewPhrase(e.defaults.current_exercise);
-
-// Execute e.functions.loadVoices.
-e.functions.loadVoices();
-
-// Chrome loads voices asynchronously.
-window.speechSynthesis.onvoiceschanged = function(event) {
-  e.functions.loadVoices();
-};
-
 $(document).keydown(function(event){
    if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase

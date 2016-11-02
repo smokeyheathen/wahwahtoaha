@@ -182,6 +182,17 @@ e = {
          var target = $('#target-language').val();
          e.functions.setLanguageTarget(target);
        });   
+       
+      e.functions.getNewPhrase(e.defaults.current_exercise);
+      
+      // Execute e.functions.loadVoices.
+      e.functions.loadVoices();
+      
+      // Chrome loads voices asynchronously.
+      window.speechSynthesis.onvoiceschanged = function(event) {
+        e.functions.loadVoices();
+      };
+       
     },
    loadPhrases(base,target){
       // base and target are optional - use defaults if omitted
