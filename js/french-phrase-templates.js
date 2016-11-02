@@ -44,36 +44,6 @@ function gp_date_recent(){
 
 }
 
-// generate_phrase_random_integer
-function gnRandomInteger(minimum,maximum){
-	var year = Math.floor(Math.random() * (maximum-minimum)) + minimum;
-	return year;
-}
-
-// Return a very common year, likely to be in the news or similar
-function gnYearRecent(){
-	var year = gnRandomInteger(1990,2020);
-	return year;
-}
-
-// Return a year used in historical contexts
-function gnYearHistorical(){
-		var year = gnRandomInteger(100,1800);
-		return year;
-}
-
-// Return a typical human age
-function gnAgeHuman(){
-		var age = gnRandomInteger(1,115);
-		return age;
-}
-
-// Return an amount of money for cafe or restaurant
-function gnMoneyCafeRestaurant(){
-	var money = gnRandomInteger(2,99) + " euros " + gnRandomInteger(2,99);
-	return money;
-}
-
 function get_random_array_element(somearray){
 	var arrayrow;
 	var arraymaxrow = arrayrow.length() - 1;

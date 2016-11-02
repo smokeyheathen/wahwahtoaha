@@ -48,16 +48,16 @@ e = {
     getNewPhrase: function(current_exercise){
       switch (current_exercise)
       {	case "number_year_recent":
-          var current_phrase = gnYearRecent();
+          var current_phrase = e.functions.gnYearRecent();
         break;
         case "number_year_historical":
-          var current_phrase = gnYearHistorical();
+          var current_phrase = e.functions.gnYearHistorical();
         break;
         case "number_age_human":
-          var current_phrase = gnAgeHuman();
+          var current_phrase = e.functions.gnAgeHuman();
         break;
         case "number_money_small":
-          var current_phrase = gnMoneyCafeRestaurant();
+          var current_phrase = e.functions.gnMoneyCafeRestaurant();
         break;
         case "test_phrases":
           var current_phrase = e.functions.getTestPhrase();
@@ -80,9 +80,39 @@ e = {
         console.error("no phrases");
         return "error - no phrases";
       }
-      var phrase = phrases[gnRandomInteger(0,phrases.length)];
+      var phrase = phrases[e.functions.gnRandomInteger(0,phrases.length)];
       return phrase.target; 
     },
+    
+    // generate_phrase_random_integer
+    gnRandomInteger(minimum,maximum){
+      var year = Math.floor(Math.random() * (maximum-minimum)) + minimum;
+      return year;
+    },
+
+    // Return a very common year, likely to be in the news or similar
+    gnYearRecent(){
+      var year = e.functions.gnRandomInteger(1990,2020);
+      return year;
+    },
+
+    // Return a year used in historical contexts
+    gnYearHistorical(){
+      var year = e.functions.gnRandomInteger(100,1800);
+      return year;
+    },
+
+    // Return a typical human age
+    gnAgeHuman(){
+      var age = e.functions.gnRandomInteger(1,115);
+      return age;
+    },
+
+    // Return an amount of money for cafe or restaurant
+    gnMoneyCafeRestaurant(){
+      var money = e.functions.gnRandomInteger(2,99) + " euros " + e.functions.gnRandomInteger(2,99);
+      return money;
+    },    
     
     handleFileSelect:function(evt) {
        var files = evt.target.files; // FileList object
