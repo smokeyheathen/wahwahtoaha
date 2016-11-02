@@ -382,6 +382,7 @@ e = {
     
     skipNextPhrase() {
       e.functions.getNewPhrase(e.defaults.currentExercise);
+      $('#speech-msg').val("");
       e.functions.speak();
     },
     
