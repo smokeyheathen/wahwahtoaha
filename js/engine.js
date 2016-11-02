@@ -62,7 +62,7 @@ e = {
           var current_phrase = "je ne sais pas";
         break;
       }
-      return current_phrase;
+      e.defaults.current_phrase = current_phrase;
     },
     getTestPhrase(tag){
       var phrases = e.phrases[e.defaults.language_base][e.defaults.language_target];
@@ -317,7 +317,7 @@ e = {
     },
     
     skipNextPhrase: function() {
-      e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
+      e.functions.getNewPhrase(e.defaults.current_exercise);
       e.functions.speak(e.defaults.current_phrase);
     },
     
@@ -440,7 +440,7 @@ e = {
           $('#translation').text("");
           // Clear the text input
           $('#usersays').val("");
-          e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
+          e.functions.getNewPhrase(e.defaults.current_exercise);
           e.functions.printPhrase(e.defaults.current_phrase);
     },    
   }, // end functions

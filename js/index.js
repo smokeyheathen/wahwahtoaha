@@ -52,7 +52,7 @@ $(document).ready(function() {
 	});
 });
 
-e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
+e.functions.getNewPhrase(e.defaults.current_exercise);
 
 // Execute e.functions.loadVoices.
 e.functions.loadVoices();
@@ -86,7 +86,7 @@ $(document).keydown(function(event){
 			console.log ("Correct!");
 			// Clear the text input
 			$('#speech-msg').val("");
-			e.defaults.current_phrase = e.functions.getNewPhrase(e.defaults.current_exercise);
+			e.functions.getNewPhrase(e.defaults.current_exercise);
 			e.functions.speak(e.defaults.current_phrase);
 		}
 		else
