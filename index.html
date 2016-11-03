@@ -64,33 +64,15 @@
     <!-- main content area -->
     <div id="main"></div><!-- /main content area -->
 
-        <div class="row text-center voffset2">
-          <div class="col-md-1 text-center">From:</div>
-          <div class="col-md-5">
-            <select id="base-language" class="form-control">
-                <option value="en">English</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="es">Spanish</option>
-            </select>
-          </div>
-          <div class="col-md-1 text-center">To:</div>
-          <div class="col-md-5">
-            <select id="target-language" class="form-control">
-                <option value="en">English</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="es">Spanish</option>
-            </select>
-          </div>
+    <div class="container-fluid theme-showcase" role="main">
+
+
          </div>
 
-
-				<!-- HTML for main content area -->
     <!-- Home -->
-    <div class="container-fluid theme-showcase" role="main">
     <script id="home" type="text/x-tmpl">
-</script>	<!-- /Home -->
+    </script>	<!-- /Home -->
+
     <!-- About -->
     <script id="about" type="text/x-tmpl">
       <div class="jumbotron">
@@ -143,6 +125,29 @@
         </div>
       </div>
       <div class="container-fluid theme-showcase" role="main">
+
+      <div class="row text-center voffset2">
+        <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
+        <div class="col-md-2">
+          <select id="target-language" class="form-control">
+              <option value="en">English</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="es">Spanish</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">I want help in:</div>
+        <div class="col-md-2">
+          <select id="base-language" class="form-control">
+              <option value="en">English</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="es">Spanish</option>
+          </select>
+        </div>
+</div>
+
         <div class="row text-center voffset4">
           Exercise Type:
           <div aria-label="Numbers" class="btn-group" role="group">
@@ -165,12 +170,13 @@
             <p id="msg"></p>
           </div>
         </div>
+
       </div>
     </script> <!-- /Listening -->
 
     <!-- Speaking -->
     <script id="speaking" type="text/x-tmpl">
-      <div class="main-top light-bg">
+      <div class="container-fluid main-top light-bg">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center">
             <p id="translation"></p>
@@ -190,9 +196,34 @@
         </div>
       </div><!-- end main-top -->
       <div class="container-fluid theme-showcase" role="main">
+<!--
         <div class="row text-center voffset4">
           <span id="language-pair"></span>
         </div>
+-->
+
+        <div class="row text-center voffset2">
+          <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
+          <div class="col-md-2">
+            <select id="target-language" class="form-control">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="es">Spanish</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">I want help in:</div>
+          <div class="col-md-2">
+            <select id="base-language" class="form-control">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="es">Spanish</option>
+            </select>
+          </div>
+        </div>
+
         <div class="row text-center voffset4">
           Exercise Type:
           <div aria-label="Numbers" class="btn-group" role="group">
