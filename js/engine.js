@@ -133,11 +133,11 @@ e = {
     init(){
        // parse the pathname to get page and subpage
        var pathname = window.location.pathname.split('/');
-       if (typeof pathname[1] !== 'undefined' && pathname[1] !='') {
-         e.defaults.page = pathname[1];
-       }
        if (typeof pathname[2] !== 'undefined' && pathname[2] !='') {
-         e.defaults.subpage = pathname[2];
+         e.defaults.page = pathname[2];
+       }
+       if (typeof pathname[3] !== 'undefined' && pathname[3] !='') {
+         e.defaults.subpage = pathname[3];
        }
          
        // load page into main content area
@@ -201,7 +201,7 @@ e = {
       }
       var languagePair = base + "-" + target;
       console.log("loading /content/" + languagePair + "/" + languagePair + ".json");
-      var jqxhr = $.getJSON( "/content/" + languagePair + "/" + languagePair + ".json")
+      var jqxhr = $.getJSON( "/wahwah/content/" + languagePair + "/" + languagePair + ".json")
         .done(function(data) {
           console.log( "loaded "+languagePair );
           if (typeof e.phrases[base] == 'undefined') {
