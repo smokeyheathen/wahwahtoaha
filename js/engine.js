@@ -60,6 +60,9 @@ e = {
         case "verbs":
           var currentPhrase = e.functions.getTestPhrase("verb");
         break;
+        case "cafe":
+          var currentPhrase = e.functions.getTestPhrase("coffee");
+        break;
         default:
           var currentPhrase = "je ne sais pas";
         break;
