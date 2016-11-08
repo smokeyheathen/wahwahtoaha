@@ -2701,7 +2701,7 @@
 },
  {
    "base": "Do you have coffee? (informal)",
-   "target": "Est-ce que tu as du café",
+   "target": "Est-ce que tu as du café?",
    "literal": null,
    "tags": [
       "phrase",
@@ -2713,7 +2713,7 @@
 },
  {
    "base": "Do you have coffee? (formal)",
-   "target": "Est-ce que vous avez du café",
+   "target": "Est-ce que vous avez du café?",
    "literal": null,
    "tags": [
       "phrase",
@@ -2748,8 +2748,8 @@
    ]
 },
  {
-   "base": "A large creamy coffee",
-   "target": "un café grand creme",
+   "base": "I want a large creamy coffee",
+   "target": "Je veux un café grand creme",
    "literal": null,
    "tags": [
       "phrase",
@@ -2760,8 +2760,8 @@
    ]
 },
  {
-   "base": "A cream coffee",
-   "target": "un café creme",
+   "base": "I want a cream coffee",
+   "target": "Je veux un café creme",
    "literal": null,
    "tags": [
       "phrase",
@@ -2772,8 +2772,8 @@
    ]
 },
  {
-   "base": "A coffee",
-   "target": "un café",
+   "base": "I want a coffee",
+   "target": "Je veux un café",
    "literal": null,
    "tags": [
       "phrase",
@@ -2784,8 +2784,8 @@
    ]
 },
  {
-   "base": "An americano",
-   "target": "un café allonge",
+   "base": "I want an americano",
+   "target": "Je veux un café allonge",
    "literal": null,
    "tags": [
       "phrase",
@@ -2796,8 +2796,8 @@
    ]
 },
  {
-   "base": "A cappuccino",
-   "target": "un cappuccino",
+   "base": "I want a cappuccino",
+   "target": "Je veux un cappuccino",
    "literal": null,
    "tags": [
       "phrase",
@@ -2808,8 +2808,8 @@
    ]
 },
  {
-   "base": "A decaffinated coffee",
-   "target": "un deca",
+   "base": "I want a decaffinated coffee",
+   "target": "Je veux un deca",
    "literal": null,
    "tags": [
       "phrase",
@@ -2820,8 +2820,8 @@
    ]
 },
  {
-   "base": "A white decaffinated coffee",
-   "target": "un deca creme",
+   "base": "I want a white decaffinated coffee",
+   "target": "Je veux un deca creme",
    "literal": null,
    "tags": [
       "phrase",
@@ -2832,8 +2832,8 @@
    ]
 },
  {
-   "base": "A white coffee",
-   "target": "un café au lait",
+   "base": "I want a white coffee",
+   "target": "Je veux un café au lait",
    "literal": null,
    "tags": [
       "phrase",
@@ -2844,8 +2844,8 @@
    ]
 },
  {
-   "base": "An espresso",
-   "target": "un express",
+   "base": "I want an espresso",
+   "target": "Je veux un express",
    "literal": null,
    "tags": [
       "phrase",
@@ -2856,8 +2856,8 @@
    ]
 },
  {
-   "base": "A black coffee",
-   "target": "un café noir",
+   "base": "I want a black coffee",
+   "target": "Je veux un café noir",
    "literal": null,
    "tags": [
       "phrase",
@@ -2869,7 +2869,7 @@
 },
  {
    "base": "(in a cafe) Do you do cappuccino?",
-   "target": "Est-ce que tu faites du cappuccino",
+   "target": "Est-ce que tu faites du cappuccino?",
    "literal": null,
    "tags": [
       "phrase",
@@ -2893,7 +2893,7 @@
 },
  {
    "base": "Do you want a coffee? (informal)",
-   "target": "Est-ce que tu veux un café",
+   "target": "Est-ce que tu veux un café?",
    "literal": null,
    "tags": [
       "phrase",
@@ -2905,7 +2905,7 @@
 },
  {
    "base": "Do you want a coffee? (formal)",
-   "target": "Est-ce que vous voulez un café",
+   "target": "Est-ce que vous voulez un café?",
    "literal": null,
    "tags": [
       "phrase",
@@ -2917,7 +2917,7 @@
 },
  {
    "base": "Do you want a coffee? (very formal)",
-   "target": "Voulez vous un café",
+   "target": "Voulez-vous un café?",
    "literal": null,
    "tags": [
       "phrase",
@@ -3013,7 +3013,7 @@
 },
  {
    "base": "Do you have tea? (informal)",
-   "target": "Est-ce que tu as du thé",
+   "target": "Est-ce que tu as du thé?",
    "literal": null,
    "tags": [
       "phrase",
@@ -3025,7 +3025,7 @@
 },
  {
    "base": "Do you have tea? (formal)",
-   "target": "Est-ce que vous avez du thé",
+   "target": "Est-ce que vous avez du thé?",
    "literal": null,
    "tags": [
       "phrase",
@@ -3061,7 +3061,7 @@
 },
  {
    "base": "Do you like this coffee?",
-   "target": "Est-ce que tu aimes ce café",
+   "target": "Est-ce que tu aimes ce café?",
    "literal": null,
    "tags": [
       "phrase",
@@ -3073,7 +3073,7 @@
 },
  {
    "base": "Do you like this tea?",
-   "target": "Est-ce que tu aimes ce thé",
+   "target": "Est-ce que tu aimes ce thé?",
    "literal": null,
    "tags": [
       "phrase",

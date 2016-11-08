@@ -336,6 +336,13 @@ e = {
         return str;
     },
 
+    removePunctuation(str){
+      str = str.replace("?","");
+      str = str.replace("!","");
+      str = str.trim();
+      return str;
+    },
+
     replayPhrase() {
       e.functions.speak();
     },
@@ -439,6 +446,10 @@ e = {
         lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
         lowerCaseInput =  e.functions.removeDiacritics(lowerCaseInput);
 
+        // remove punctuation like ?!
+        lowerCasePhrase = e.functions.removePunctuation(lowerCasePhrase);
+        lowerCaseInput =  e.functions.removePunctuation(lowerCaseInput);
+        
         console.log("LOWER Case Input: " + lowerCaseInput);
         console.log("LOWER Case Phrase: " + lowerCasePhrase);
 
