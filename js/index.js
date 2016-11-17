@@ -1,47 +1,29 @@
 $(document).ready(function() {
 	e.functions.init();
+
 });
+
 
 $(document).keydown(function(event){
    if(event.keyCode == 13){
 		// Check current input text with previous spoken phrase
-
-		// Get the text input element.
-		var speechMsgInput = $('#speech-msg').val();
-		if (typeof speechMsgInput === 'undefined') {
-			return;
-      //speechMsgInput = $('#usersays').val();
-    }
-		lowerCaseInput = speechMsgInput.toLowerCase();
-		var lowerCasePhrase = "" + e.defaults.currentPhrase.target;
-		var lowerCasePhraseEnglish = "" + e.defaults.currentPhrase.target;
-
-		lowerCasePhrase = lowerCasePhrase.toLowerCase();
-		lowerCasePhraseEnglish = lowerCasePhraseEnglish.toLowerCase();
-
-		console.log("LOWER Case Phrase: " + lowerCasePhrase);
-		console.log("REMOVE DIACRITICS Phrase: " + e.functions.removeDiacritics(lowerCasePhrase));
-
-		lowerCasePhrase = e.functions.removeDiacritics(lowerCasePhrase);
-		lowerCasePhraseEnglish = e.functions.removeDiacritics(lowerCasePhraseEnglish);
-
-		if ((lowerCasePhrase == lowerCaseInput)||(lowerCasePhraseEnglish == lowerCaseInput)) {
-			e.defaults.incorrectAnswerCount=0;
-			console.log ("Correct!");
-			// Clear the text input
-			$('#speech-msg').val("");
-			e.functions.getNewPhrase(e.defaults.currentExercise);
-			e.functions.speak();
+		//
+		console.log ("enterkeydown!");
+		// Check what page we're on.
+		console.log ("Pathname: " + window.location.pathname);
+		if (window.location.pathname == "/listening"){
+				e.defaults.page = "listening";
+				var userInput = $('#speech-msg').val();
 		}
-		else
-		{
-			e.functions.speak();
-			e.defaults.incorrectAnswerCount++;
-			if (e.defaults.incorrectAnswerCount > 3){
-			}
-			if (e.defaults.incorrectAnswerCount > 5){
-				$('#help').text(e.defaults.currentPhrase.target);
-			}
+
+		if (window.location.pathname == "/speaking"){
+				e.defaults.page = "speaking";
+				var userInput = $('#usersays').val();
 		}
-   }
+
+		// Check then answer, then play audio
+		e.functions.checkAnswer(userInput);
+		// TO DO: Play Audio
+
+	 }
 });
