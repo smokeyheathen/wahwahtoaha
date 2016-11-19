@@ -449,7 +449,7 @@ e = {
         // remove punctuation like ?!
         lowerCasePhrase = e.functions.removePunctuation(lowerCasePhrase);
         lowerCaseInput =  e.functions.removePunctuation(lowerCaseInput);
-        
+
         console.log("LOWER Case Input: " + lowerCaseInput);
         console.log("LOWER Case Phrase: " + lowerCasePhrase);
 
@@ -460,6 +460,7 @@ e = {
 
           // Clear the text input
           $('#usersays').val("");
+          $('#speech-msg').val("");
           e.functions.skipNextSpeakingPhrase();
         }
         else

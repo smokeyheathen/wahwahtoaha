@@ -21,9 +21,12 @@ $(document).keydown(function(event){
 				var userInput = $('#usersays').val();
 		}
 
-		// Check then answer, then play audio
+		// Check then answer, then play audio if listening exercise
 		e.functions.checkAnswer(userInput);
-		// TO DO: Play Audio
+		// TO DO: Play Audio if listening exercise
+		if (e.defaults.page == "listening"){
+			e.functions.replayPhrase();
+		}
 
 	 }
 });
