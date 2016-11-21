@@ -128,8 +128,8 @@
       <!-- Settings -->
       <div class="container-fluid theme-showcase" role="main">
 
-      <div class="row text-center voffset2">
-        <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
+      <div class="row text-left voffset5">
+        <div class="col-md-2 col-md-offset-4"><p>I want to learn:</p></div>
         <div class="col-md-2">
           <select id="target-language" class="form-control">
               <option value="en">English</option>
@@ -138,8 +138,10 @@
               <option value="es">Spanish</option>
           </select>
         </div>
+      </div>
 
-        <div class="col-md-2">I want help in:</div>
+      <div class="row text-left voffset2">
+        <div class="col-md-2 col-md-offset-4">I want hints and help in:</div>
         <div class="col-md-2">
           <select id="base-language" class="form-control">
               <option value="en">English</option>
@@ -150,24 +152,41 @@
         </div>
       </div>
 
-        <div class="row text-center voffset4">
-          Exercise Type:
+      <div class="row text-left voffset4">
+        <div class="col-md-2 col-md-offset-2">Exercise Type:</div>
+        <div class="col-md-6">
           <div aria-label="Numbers" class="btn-group" role="group">
-            <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
-            <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
+              <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button>
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button>
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button>
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
           </div>
+        </div>
+      </div>
+
+      <div class="row text-left voffset1">
+        <div class="col-md-2 col-md-offset-2"></div>
+        <div class="col-md-6">
           <div aria-label="Phrases" class="btn-group" role="group">
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
           </div>
         </div>
-        <div class="row text-center voffset2">
-          Speech rate:
-          <div aria-label="Numbers" class="btn-group" role="group">
-            <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
+      </div>
+
+        <div class="row text-left voffset2">
+          <div class="col-md-2 col-md-offset-2">Speech rate:</div>
+          <div class="col-md-6">
+            <div aria-label="Numbers" class="btn-group" role="group">
+              <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button>
+              <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button>
+              <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
+            </div>
           </div>
         </div>
+
         <div class="row voffset4">
           <div class="col-md-4 col-md-offset-4 text-center">
             <p id="msg"></p>
@@ -203,8 +222,8 @@
       <!-- Settings -->
       <div class="container-fluid theme-showcase" role="main">
 
-      <div class="row text-center voffset2">
-        <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
+      <div class="row text-left voffset5">
+        <div class="col-md-2 col-md-offset-4"><p>I want to learn:</p></div>
         <div class="col-md-2">
           <select id="target-language" class="form-control">
               <option value="en">English</option>
@@ -213,8 +232,10 @@
               <option value="es">Spanish</option>
           </select>
         </div>
+      </div>
 
-        <div class="col-md-2">I want help in:</div>
+      <div class="row text-left voffset2">
+        <div class="col-md-2 col-md-offset-4">I want hints and help in:</div>
         <div class="col-md-2">
           <select id="base-language" class="form-control">
               <option value="en">English</option>
@@ -225,24 +246,41 @@
         </div>
       </div>
 
-        <div class="row text-center voffset4">
-          Exercise Type:
+      <div class="row text-left voffset4">
+        <div class="col-md-2 col-md-offset-2">Exercise Type:</div>
+        <div class="col-md-6">
           <div aria-label="Numbers" class="btn-group" role="group">
-            <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
-            <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
+              <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button>
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button>
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button>
+              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
           </div>
+        </div>
+      </div>
+
+      <div class="row text-left voffset1">
+        <div class="col-md-2 col-md-offset-2"></div>
+        <div class="col-md-6">
           <div aria-label="Phrases" class="btn-group" role="group">
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
           </div>
         </div>
-        <div class="row text-center voffset2">
-          Speech rate:
-          <div aria-label="Numbers" class="btn-group" role="group">
-            <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
+      </div>
+
+        <div class="row text-left voffset2">
+          <div class="col-md-2 col-md-offset-2">Speech rate:</div>
+          <div class="col-md-6">
+            <div aria-label="Numbers" class="btn-group" role="group">
+              <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button>
+              <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button>
+              <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
+            </div>
           </div>
         </div>
+
         <div class="row voffset4">
           <div class="col-md-4 col-md-offset-4 text-center">
             <p id="msg"></p>
@@ -250,7 +288,6 @@
         </div>
       </div>
       <!-- /Settings -->
-
 
     </script> <!-- /Speaking -->
 
