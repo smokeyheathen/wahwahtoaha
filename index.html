@@ -9,11 +9,11 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-		<!-- Latest compiled and minified CSS -->
-    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
 
@@ -124,55 +124,8 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid theme-showcase" role="main">
 
-      <div class="row text-center voffset2">
-        <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
-        <div class="col-md-2">
-          <select id="target-language" class="form-control">
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="de">German</option>
-              <option value="es">Spanish</option>
-          </select>
-        </div>
 
-        <div class="col-md-2">I want help in:</div>
-        <div class="col-md-2">
-          <select id="base-language" class="form-control">
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="de">German</option>
-              <option value="es">Spanish</option>
-          </select>
-        </div>
-</div>
-
-        <div class="row text-center voffset4">
-          Exercise Type:
-          <div aria-label="Numbers" class="btn-group" role="group">
-            <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
-            <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
-          </div>
-          <div aria-label="Phrases" class="btn-group" role="group">
-      						<button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
-      						<button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
-          </div>
-        </div>
-        <div class="row text-center voffset2">
-          Speech rate:
-          <div aria-label="Numbers" class="btn-group" role="group">
-            <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
-          </div>
-        </div>
-        <div class="row voffset4">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <p id="msg"></p>
-          </div>
-        </div>
-
-      </div>
     </script> <!-- /Listening -->
 
     <!-- Speaking -->
@@ -196,53 +149,60 @@
           </div>
         </div>
       </div><!-- end main-top -->
-      <div class="container-fluid theme-showcase" role="main">
-<!--
-        <div class="row text-center voffset4">
-          <span id="language-pair"></span>
-        </div>
--->
+    </script> <!-- /Speaking -->
 
-        <div class="row text-center voffset2">
-          <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
-          <div class="col-md-2">
-            <select id="target-language" class="form-control">
-                <option value="en">English</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="es">Spanish</option>
-            </select>
-          </div>
 
-          <div class="col-md-2">I want help in:</div>
-          <div class="col-md-2">
-            <select id="base-language" class="form-control">
-                <option value="en">English</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="es">Spanish</option>
-            </select>
-          </div>
-        </div>
+    <!-- Settings -->
+    <div class="container-fluid theme-showcase" role="main">
 
-        <div class="row text-center voffset4">
-          Exercise Type:
-          <div aria-label="Numbers" class="btn-group" role="group">
-            <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
-          </div>
-          <div aria-label="Phrases" class="btn-group" role="group">
-      						<button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
-      						<button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
-                  <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
-          </div>
+    <div class="row text-center voffset2">
+      <div class="col-md-2 col-md-offset-2"><p>I want to learn:</p></div>
+      <div class="col-md-2">
+        <select id="target-language" class="form-control">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="es">Spanish</option>
+        </select>
+      </div>
+
+      <div class="col-md-2">I want help in:</div>
+      <div class="col-md-2">
+        <select id="base-language" class="form-control">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="es">Spanish</option>
+        </select>
+      </div>
+    </div>
+
+      <div class="row text-center voffset4">
+        Exercise Type:
+        <div aria-label="Numbers" class="btn-group" role="group">
+          <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
+          <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button> <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
         </div>
-        <div class="row voffset4">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <p id="msg"></p>
-          </div>
+        <div aria-label="Phrases" class="btn-group" role="group">
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('test_phrases');" type="button">Phrases</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
+                <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
         </div>
       </div>
-    </script> <!-- /Speaking -->
+      <div class="row text-center voffset2">
+        Speech rate:
+        <div aria-label="Numbers" class="btn-group" role="group">
+          <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button> <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
+        </div>
+      </div>
+      <div class="row voffset4">
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <p id="msg"></p>
+        </div>
+      </div>
+    </div>
+    <!-- /Settings -->
+
 
     <script src="/js/papaparse.min.js"></script>
     <script src="/js/engine.js"></script>
