@@ -54,10 +54,14 @@ speechbubbles
 }
 
 
-#translation, #speakingstatus
+#translation, #speakingstatus, #help
 {
 	font-size: 3em;
 	color: #DEC25B;
+}
+
+#help{
+	font-size:2em;
 }
 
 .speech

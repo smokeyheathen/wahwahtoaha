@@ -461,15 +461,16 @@ e = {
           // Clear the text input
           $('#usersays').val("");
           $('#speech-msg').val("");
+          $('#help').text("");
           e.functions.skipNextSpeakingPhrase();
         }
         else
         {
-          e.functions.printPhrase(e.defaults.currentPhrase.target);
+          e.functions.printPhrase(e.defaults.currentPhrase.base);
           e.defaults.incorrectAnswerCount++;
           if (e.defaults.incorrectAnswerCount > 3){
-            $('#translation').text(e.defaults.currentPhrase.target);
-
+            //$('#translation').text(e.defaults.currentPhrase.target);
+            $('#help').text(e.defaults.currentPhrase.target);
           }
           if (e.defaults.incorrectAnswerCount > 5){
             $('#help').text(e.defaults.currentPhrase.target);
@@ -510,6 +511,7 @@ e = {
       $('#translation').text("");
       // Clear the text input
       $('#usersays').val("");
+      $('#help').text("");
       e.functions.getNewPhrase(e.defaults.currentExercise);
       e.functions.printPhrase(e.defaults.currentPhrase.base);
     },
