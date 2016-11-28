@@ -468,11 +468,8 @@ e = {
         {
           e.functions.printPhrase(e.defaults.currentPhrase.base);
           e.defaults.incorrectAnswerCount++;
-          if (e.defaults.incorrectAnswerCount > 3){
+          if (e.defaults.incorrectAnswerCount > 1){
             //$('#translation').text(e.defaults.currentPhrase.target);
-            $('#help').text(e.defaults.currentPhrase.target);
-          }
-          if (e.defaults.incorrectAnswerCount > 5){
             $('#help').text(e.defaults.currentPhrase.target);
           }
         }
