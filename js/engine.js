@@ -453,16 +453,13 @@ e = {
         console.log("LOWER Case Input: " + lowerCaseInput);
         console.log("LOWER Case Phrase: " + lowerCasePhrase);
 
+        var helptext = $('#help').text();
+
         if (lowerCasePhrase == lowerCaseInput) {
           e.defaults.incorrectAnswerCount=0;
-          $('#translation').text("");
           console.log ("Correct!");
-
-          // Clear the text input
-          $('#usersays').val("");
-          $('#speech-msg').val("");
-          $('#help').text("");
-          e.functions.skipNextSpeakingPhrase();
+          $('#help').text("Correct!");
+          window.setTimeout(e.functions.skipNextSpeakingPhrase,3000);
         }
         else
         {
