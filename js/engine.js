@@ -458,16 +458,36 @@ e = {
         if (lowerCasePhrase == lowerCaseInput) {
           e.defaults.incorrectAnswerCount=0;
           console.log ("Correct!");
-          $('#help').text("Correct!");
-          window.setTimeout(e.functions.skipNextSpeakingPhrase,3000);
+
+          if (window.location.pathname == "/listening"){
+            helptext = "Correct! " + e.defaults.currentPhrase.target;
+            $('#help').text(helptext);
+            window.setTimeout(e.functions.skipNextListeningPhrase,3000);
+          }
+          if (window.location.pathname == "/speaking") {
+            helptext = "Correct! " + e.defaults.currentPhrase.target;
+            $('#help').text(helptext);
+            e.functions.speak();
+            window.setTimeout(e.functions.skipNextSpeakingPhrase,3000);
+          }
         }
         else
         {
-          e.functions.printPhrase(e.defaults.currentPhrase.base);
-          e.defaults.incorrectAnswerCount++;
-          if (e.defaults.incorrectAnswerCount > 1){
-            //$('#translation').text(e.defaults.currentPhrase.target);
-            $('#help').text(e.defaults.currentPhrase.target);
+          if (window.location.pathname == "/listening"){
+            e.functions.speak();
+            e.defaults.incorrectAnswerCount++;
+            if (e.defaults.incorrectAnswerCount > 1){
+              //$('#translation').text(e.defaults.currentPhrase.target);
+              $('#help').text(e.defaults.currentPhrase.target);
+            }
+          }
+          if (window.location.pathname == "/speaking") {
+            e.functions.printPhrase(e.defaults.currentPhrase.base);
+            e.defaults.incorrectAnswerCount++;
+            if (e.defaults.incorrectAnswerCount > 1){
+              //$('#translation').text(e.defaults.currentPhrase.target);
+              $('#help').text(e.defaults.currentPhrase.target);
+            }
           }
         }
     },
@@ -500,7 +520,7 @@ e = {
     },
     // this is different from the listening function, so let's keep it here for now
     skipNextSpeakingPhrase(){
-      console.log('skip');
+      console.log('skipnextspeakingphrase');
       e.defaults.incorrectAnswerCount=0;
       $('#translation').text("");
       // Clear the text input
@@ -509,6 +529,15 @@ e = {
       e.functions.getNewPhrase(e.defaults.currentExercise);
       e.functions.printPhrase(e.defaults.currentPhrase.base);
     },
+    skipNextListeningPhrase(){
+        console.log('skipNextListeningPhrase');
+        e.defaults.incorrectAnswerCount=0;
+        // Clear the text input
+        e.functions.getNewPhrase(e.defaults.currentExercise);
+        e.functions.speak();
+        $('#speech-msg').val("");
+        $('#help').text("");
+    }
   }, // end functions
   phrases: {}
 }

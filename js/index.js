@@ -23,10 +23,7 @@ $(document).keydown(function(event){
 
 		// Check then answer, then play audio if listening exercise
 		e.functions.checkAnswer(userInput);
-		// TO DO: Play Audio if listening exercise
-		if (e.defaults.page == "listening"){
-			e.functions.replayPhrase();
-		}
+
 
 	 }
 });
