@@ -54,15 +54,22 @@ e = {
         case "number_money_small":
           var currentPhrase = e.functions.gnMoneyCafeRestaurant();
         break;
-        case "test_phrases":
-          var currentPhrase = e.functions.getTestPhrase();
+        case "phrases":
+          var currentPhrase = e.functions.getTestPhrase("phrase");
         break;
         case "verbs":
           var currentPhrase = e.functions.getTestPhrase("verb");
         break;
         case "cafe":
-          var currentPhrase = e.functions.getTestPhrase("coffee");
+          var currentPhrase = e.functions.getTestPhrase("cafe");
         break;
+        case "weather":
+          var currentPhrase = e.functions.getTestPhrase("weather");
+        break;
+        case "daily_plans":
+          var currentPhrase = e.functions.getTestPhrase("Daily plans");
+        break;
+
         default:
           var currentPhrase = "je ne sais pas";
         break;

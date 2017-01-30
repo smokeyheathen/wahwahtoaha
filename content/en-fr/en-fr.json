@@ -3082,5 +3082,2153 @@
       "",
       ""
    ]
+},
+ {
+   "base": "I've burnt my tongue",
+   "target": "Je me suis brûlé la langue",
+   "literal": null,
+   "tags": [
+      "phrase",
+      "cafe",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "It's raining",
+   "target": "Il pleut",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's raining heavily",
+   "target": "Il pleut très fort",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's raining a lot",
+   "target": "Il pleut beaucoup",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's raining again",
+   "target": "Il pleut encore",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's raining heavily again",
+   "target": "Il pleut encore très fort",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "Its raining like cow piss",
+   "target": "Il pleut comme vache qui pisse",
+   "literal": null,
+   "tags": [
+      "",
+      "",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's raining stair-rods",
+   "target": "Il pleut des cordes",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's sunny",
+   "target": "Il fait beau",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "sun",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's good weather",
+   "target": "Il fait beau temps",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "sun",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's sunny outside",
+   "target": "Il fait beau dehors",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "sun",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "the weather is still good",
+   "target": "Le temps est au beau fixe",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "sun",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It's very sunny",
+   "target": "Il fait tres beau",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "sun",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's cold (weather)",
+   "target": "Il fait froid",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's cold (weather) outside",
+   "target": "Il fait froid dehors",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's cold (weather) here",
+   "target": "Il fait froid ici",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's cold (weather) today",
+   "target": "Il fait froid aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's very cold (weather) today",
+   "target": "Il fait très froid aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's warm (weather)",
+   "target": "Il fait chaud",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "warm",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's very warm (weather) today",
+   "target": "Il fait tres chaud aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "warm",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's warm (weather) outside",
+   "target": "Il fait chaud dehors",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "warm",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's warm (weather) today",
+   "target": "Il fait chaud aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "warm",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's warm (weather) here",
+   "target": "Il fait chaud ici",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "warm",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's snowing",
+   "target": "Il neige",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's snowing again",
+   "target": "Il neige encore",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's snowing a lot",
+   "target": "Il neige beaucoup",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's snowing heavily",
+   "target": "Il neige très fort",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's snowing a lIttle",
+   "target": "Il neige un peu",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's cloudy weather",
+   "target": "Il y a un temps de nuageux",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It's cloudy",
+   "target": "Il fait nuageux",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's overcast",
+   "target": "Il fait couvert",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It is grey (weather)",
+   "target": "Il fait gris",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's overcast today",
+   "target": "Il fait couvert aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "The weather is overcast",
+   "target": "Le temps est couvert",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "The weather is gloomy",
+   "target": "Le temps est maussade",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cloudy",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's windy (there is some wind)",
+   "target": "Il y a du vent",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's very windy (there is lots of wind)",
+   "target": "Il y a beaucoup de vent",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's very warm (weather) today",
+   "target": "Il fait très chaud aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It's very cold (weather)",
+   "target": "Il fait très froid",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's freezing today",
+   "target": "Il gèle aujourd'hui",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's icy today",
+   "target": "Il y a du verglas aujourd'hui",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's very icy",
+   "target": "Il y a beaucoup de verglas",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It's not raining anymore",
+   "target": "Il ne pleut plus",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's not snowing anymore",
+   "target": "Il ne neige plus",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It stopped raining an hour ago",
+   "target": "Il a arrêté de pleuvoir il y a une heure",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 4",
+      ""
+   ]
+},
+ {
+   "base": "It stopped snowing an hour ago",
+   "target": "Il a arrêté de neiger il y a une une heure",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 4",
+      ""
+   ]
+},
+ {
+   "base": "It was raining",
+   "target": "Il pleuvait",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It has been raining",
+   "target": "Il a plu",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining an hour ago",
+   "target": "Il pleuvait il y a une heure",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was snowing",
+   "target": "Il neigeait",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It has been snowing",
+   "target": "Il a neigé",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "An hour ago it was snowing",
+   "target": "Il y a une heure il neigeait",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was snowing an hour ago",
+   "target": "Il neigeait il y a une heure",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 4",
+      ""
+   ]
+},
+ {
+   "base": "It was raining this morning",
+   "target": "Il pleuvait ce matin",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was snowing this morning",
+   "target": "Il neigeait ce matin",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was raining last night",
+   "target": "Il pleuvait hier soir",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was snowing last night",
+   "target": "Il neigeait hier soir",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "snow",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was sunny yesterday",
+   "target": "Il faisait beau hier",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "sun",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was windy yesterday",
+   "target": "Il y avait du vent hier",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It will stop raining soon",
+   "target": "Il va arrêter de pleuvoir bientôt",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 4",
+      ""
+   ]
+},
+ {
+   "base": "It is going to rain soon",
+   "target": "Il va pleuvoir bientôt",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It is going to rain",
+   "target": "Il va pleuvoir",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It will rain soon",
+   "target": "Il pleuvra bientôt",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It will rain",
+   "target": "Il pleuvra",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It will be stormy",
+   "target": "Il fera orageux",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was stormy",
+   "target": "Il a fait orageux",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was stormy this morning",
+   "target": "Il a fait orageux ce matin",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It is a thunderstorm",
+   "target": "C'est un orage",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It is a storm",
+   "target": "C'est une tempête",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "There will be a storm",
+   "target": "Il va y avoir une tempête",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "There will be a storm soon",
+   "target": "Il va y avoir une tempête bientôt",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "There will be a storm tomorrow",
+   "target": "Il va y avoir une tempête demain",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "The storm is passing",
+   "target": "La tempête est en train de passer",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "stormy",
+      "level 4",
+      ""
+   ]
+},
+ {
+   "base": "The rain is passing",
+   "target": "La pluie est en train de passer",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 4",
+      ""
+   ]
+},
+ {
+   "base": "The rain is lighter",
+   "target": "La pluie est moins forte",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining yesterday",
+   "target": "Il pleuvait hier",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It rained yesterday",
+   "target": "Il a plu hier",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Monday",
+   "target": "Il a plu lundi",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Tuesday",
+   "target": "Il a plu mardi",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Wednesday",
+   "target": "Il a plu mercredi",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Thursday",
+   "target": "Il a plu jeudi",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Friday",
+   "target": "Il a plu vendredi",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Saturday",
+   "target": "Il a plu samedi",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained on Sunday",
+   "target": "Il a plu dimanche",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It rained last week",
+   "target": "Il a plu la semaine dernière",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Monday",
+   "target": "Il pleuvait lundi",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Tuesday",
+   "target": "Il pleuvait mardi",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Wednesday",
+   "target": "Il pleuvait mercredi",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Thursday",
+   "target": "Il pleuvait jeudi",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Friday",
+   "target": "Il pleuvait vendredi",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Saturday",
+   "target": "Il pleuvait samedi",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It was raining on Sunday",
+   "target": "Il pleuvait dimanche",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It will be bad weather",
+   "target": "Il fera mauvais temps",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It will be good weather",
+   "target": "Il fera beau",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "The weather will be bad next week",
+   "target": "Il fera mauvais temps la semaine prochaine",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "The weather will be good next week",
+   "target": "Il fera beau la semaine prochaine",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "The temperature is rising",
+   "target": "La température monte",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "The temperature is falling",
+   "target": "La température est en baisse",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "It is getting hotter",
+   "target": "Il va faire de plus en plus chaud",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "warm",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It is getting colder",
+   "target": "Il va faire de plus en plus froid",
+   "literal": 0,
+   "tags": [
+      "phrase",
+      "weather",
+      "cold",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "It's a northerly wind",
+   "target": "C'est un vent de nord",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's a southerly wind",
+   "target": "C'est un vent du sud",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's a warm wind",
+   "target": "C'est un vent chaud",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "It's a cold wind",
+   "target": "C'est un vent froid",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "windy",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "There are puddles",
+   "target": "Il y a des flaques",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "There are deep puddles in the street",
+   "target": "Il y a des flaques profonds dans la rue",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "There are deep puddles on the road",
+   "target": "Il y a des flaques profonds sur la route",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "There are puddles in the street",
+   "target": "Il y a des flaques dans la rue",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "There are puddles on the road",
+   "target": "Il y a des flaques sur la route",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "There are puddles everywhere",
+   "target": "Il y a des flaques partout",
+   "literal": 1,
+   "tags": [
+      "phrase",
+      "weather",
+      "rain",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "What's the weather like?",
+   "target": "Quel temps fait-il?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "How was the weather yesterday?",
+   "target": "Comment était la météo hier?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 3",
+      ""
+   ]
+},
+ {
+   "base": "How was the weather?",
+   "target": "Comment était la météo?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 2",
+      ""
+   ]
+},
+ {
+   "base": "How was the weather last week?",
+   "target": "Comment était la météo la semaine dernière?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "How was the weather there?",
+   "target": "Comment était le temps là-bas?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "How was the weather in Paris?",
+   "target": "Comment était la météo à Paris?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "How was the weather yesterday?",
+   "target": "Quel temps faisait-il hier?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "What is the weather forecast for tomorrow?",
+   "target": "Quelle est la météo prévue pour demain?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "What is the weather forecast for next week?",
+   "target": "Quelle est la météo pour la semaine prochaine?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "Will it rain tomorrow?",
+   "target": "Va-t-il pleuvoir demain?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "Will it rain today?",
+   "target": "Va-t-il pleuvoir aujourd'hui?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "rain",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "Will it snow tomorrow?",
+   "target": "Va-t-il neiger demain?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "snow",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "Did you have good weather? (informal)",
+   "target": "As-tu eu beau temps?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "Did you have good weather? (formal)",
+   "target": "Avez-vous eu beau temps?",
+   "literal": 1,
+   "tags": [
+      "questions",
+      "weather",
+      "",
+      "level 1",
+      ""
+   ]
+},
+ {
+   "base": "What did you do today?",
+   "target": "Qu'est-ce que tu as fait aujourd'hui?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What did you do this morning?",
+   "target": "Qu'est-ce que tu as fait ce matin?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What did you do last night?",
+   "target": "Qu'est-ce que tu as fait la nuit derniere?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What did you do yesterday?",
+   "target": "Qu'est-ce que tu as fait hier?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What did you do on the weekend?",
+   "target": "Qu'est-ce que tu as fait ce weekend?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What are you going to do today?",
+   "target": "Qu'est-ce que tu vas faire aujourd'hui?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What are your plans today?",
+   "target": "Qu'est-ce que tu as prévu aujourd'hui?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What are you plans for today?",
+   "target": "Quels sont vos plans pour aujourd'hui?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "What are you going to do this weekend?",
+   "target": "Qu'est-ce que tu vas faire ce weekend?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Do you have any plans this evening?",
+   "target": "Est-ce que tu as des projets pour ce soir?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Are you doing anything tonight?",
+   "target": "Est-ce que tu fais quelque chose ce soir?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Are you doing anything today?",
+   "target": "Est-ce que tu fais quelque chose aujourd'hui?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Are you free this evening?",
+   "target": "Etes-vous libre ce soir?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Are you free today?",
+   "target": "Es-tu libre aujourd'hui?",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Questions",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I went for a walk",
+   "target": "Je suis allé faire une promenade",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going walking",
+   "target": "Je vais marcher",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to go for a walk",
+   "target": "Je vais faire une promenade",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I want to go for a walk",
+   "target": "Je veux aller faire une promenade",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I want to go walking",
+   "target": "Je veux marcher",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I need to get outside",
+   "target": "J'ai besoin de sortir",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I need to go now",
+   "target": "je dois y aller maintenant",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I need to go (clothes) shopping",
+   "target": "J'ai besoin d'aller faire du shopping",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I ought to go buy food to eat",
+   "target": "je dois aller acheter a manger",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I ought to go (clothes) shopping",
+   "target": "je dois aller faire du shopping",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I need to go food chopping",
+   "target": "je dois aller faire des courses",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I am going shopping for clothes",
+   "target": "Je vais faire du shopping pour les vêtements",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going cycling",
+   "target": "Je vais faire du vélo",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to run",
+   "target": "Je vais courir",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to run outside",
+   "target": "Je vais courir dehors",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to run by the river",
+   "target": "Je vais courir du cote de la rivière",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going for a drink",
+   "target": "Je vais prendre un verre",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going for a drink with my friends",
+   "target": "Je vais prendre un verre avec mes amis",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going for a drink with friends",
+   "target": "Je vais prendre un verre avec des amis",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm meeting friends",
+   "target": "Je vois voir des amis",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm meeting friends in town",
+   "target": "Je vais voir des amis en ville",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm meeting friends for a drink",
+   "target": "Je vais voir des amis pour boire un verre",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm meeting friends for a meal",
+   "target": "Je vais voir des amis pour un repas",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to cook for friends",
+   "target": "Je vais cuisiner pour des amis",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to cook for my friends",
+   "target": "Je vais cuisiner pour mes amis",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Friends are coming over",
+   "target": "Des amis viennent a la maison",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Friends are arriving (immediately)",
+   "target": "Des amis arrivent",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Friends are coming over to watch films",
+   "target": "Des amis viennent regarder des films",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Friends are coming over to play games",
+   "target": "Des amis viennent jouer à des jeux",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "Let's invite friends over for dinner",
+   "target": "Invitons des amis à dîner",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to clean the house",
+   "target": "Je vais nettoyer la maison",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to clean the car",
+   "target": "Je vais nettoyer la voiture",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to repair the car",
+   "target": "Je vais réparer la voiture",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to clean the bicycle",
+   "target": "Je vais nettoyer le velo",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to wash the bicycle",
+   "target": "Je vais laver le velo",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to repair the bicycle",
+   "target": "Je vais réparer le vélo",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to have a shower",
+   "target": "Je vais prendre un douche",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm going to have a bath",
+   "target": "Je vais prendre un bain",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I am currently cooking",
+   "target": "je suis en train de faire a manger",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm currently painting",
+   "target": "je suis en train de peindre",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
+},
+ {
+   "base": "I'm currently doing my exercises",
+   "target": "je suis en train de faire mes exercises",
+   "literal": null,
+   "tags": [
+      "Daily plans",
+      "Phrase",
+      "",
+      "",
+      ""
+   ]
 }
 ]
