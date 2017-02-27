@@ -42,34 +42,38 @@ e = {
     },
     getNewPhrase(currentExercise){
       switch (currentExercise)
-      {	case "number_year_recent":
-          var currentPhrase = e.functions.gnYearRecent();
-        break;
-        case "number_year_historical":
-          var currentPhrase = e.functions.gnYearHistorical();
-        break;
-        case "number_age_human":
-          var currentPhrase = e.functions.gnAgeHuman();
-        break;
-        case "number_money_small":
-          var currentPhrase = e.functions.gnMoneyCafeRestaurant();
-        break;
-        case "phrases":
-          var currentPhrase = e.functions.getTestPhrase("phrase");
-        break;
-        case "verbs":
-          var currentPhrase = e.functions.getTestPhrase("verb");
-        break;
-        case "cafe":
-          var currentPhrase = e.functions.getTestPhrase("cafe");
-        break;
-        case "weather":
-          var currentPhrase = e.functions.getTestPhrase("weather");
-        break;
-        case "daily_plans":
-          var currentPhrase = e.functions.getTestPhrase("Daily plans");
-        break;
-
+      {	case "number_year_recent": var currentPhrase = e.functions.gnYearRecent(); break;
+        case "number_year_historical": var currentPhrase = e.functions.gnYearHistorical(); break;
+        case "number_age_human": var currentPhrase = e.functions.gnAgeHuman(); break;
+        case "number_money_small": var currentPhrase = e.functions.gnMoneyCafeRestaurant(); break;
+        case "phrases": var currentPhrase = e.functions.getTestPhrase("phrase"); break;
+        case "verbs": var currentPhrase = e.functions.getTestPhrase("verb"); break;
+        case "cafe": var currentPhrase = e.functions.getTestPhrase("cafe"); break;
+        case "weather": var currentPhrase = e.functions.getTestPhrase("weather"); break;
+        case "daily_plans": var currentPhrase = e.functions.getTestPhrase("Daily plans"); break;
+        case "To be": var currentPhrase = e.functions.getTestPhrase("to be"); break;
+        case "To have": var currentPhrase = e.functions.getTestPhrase("to have"); break;
+        case "To be able": var currentPhrase = e.functions.getTestPhrase("to be able"); break;
+        case "To do": var currentPhrase = e.functions.getTestPhrase("to do or make"); break;
+        case "To put": var currentPhrase = e.functions.getTestPhrase("to put or place"); break;
+        case "To say": var currentPhrase = e.functions.getTestPhrase("to say or tell"); break;
+        case "To have to": var currentPhrase = e.functions.getTestPhrase("to have to"); break;
+        case "To take": var currentPhrase = e.functions.getTestPhrase("to take"); break;
+        case "To give": var currentPhrase = e.functions.getTestPhrase("to give"); break;
+        case "To go": var currentPhrase = e.functions.getTestPhrase("to go"); break;
+        case "To want": var currentPhrase = e.functions.getTestPhrase("to want"); break;
+        case "To know": var currentPhrase = e.functions.getTestPhrase("to know"); break;
+        case "To see": var currentPhrase = e.functions.getTestPhrase("to see"); break;
+        case "To ask": var currentPhrase = e.functions.getTestPhrase("to ask"); break;
+        case "To find": var currentPhrase = e.functions.getTestPhrase("to find"); break;
+        case "To give back": var currentPhrase = e.functions.getTestPhrase("to give back"); break;
+        case "To come": var currentPhrase = e.functions.getTestPhrase("to come"); break;
+        case "To pass": var currentPhrase = e.functions.getTestPhrase("to pass"); break;
+        case "To stay": var currentPhrase = e.functions.getTestPhrase("to stay"); break;
+        case "To hold": var currentPhrase = e.functions.getTestPhrase("to hold"); break;
+        case "To carry": var currentPhrase = e.functions.getTestPhrase("to carry"); break;
+        case "To speak": var currentPhrase = e.functions.getTestPhrase("to speak"); break;
+        case "To show": var currentPhrase = e.functions.getTestPhrase("to show"); break;
         default:
           var currentPhrase = "je ne sais pas";
         break;
