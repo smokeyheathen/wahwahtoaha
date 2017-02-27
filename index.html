@@ -53,9 +53,6 @@
             <li id="speaking-menu">
               <a href="/speaking">Speaking</a>
             </li>
-            <li id="listening-menu">
-              <a href="/listening">Listening</a>
-            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -94,7 +91,7 @@
           <div class="col-md-4 text-justify">
             <h2>Philosophy</h2>
             <p>We want to expose you to common words as much as possible, but with variation so that you don't switch off your brain. We're starting with generating random numbers to practice with. Then generating sentences with those numbers so that you get varied repetition. We'll also be looking at specific topic sentences or verb conjugations to try and give as many useful exercises as we can.</p>
-            <p></p>
+            <p>&nbsp;</p>
           </div>
           <div class="col-md-4 text-justify">
             <h2>Technology</h2>
@@ -103,103 +100,6 @@
         </div>
       </div>
     </script>	<!-- /Home -->
-
-
-    <!-- Listening -->
-    <script id="listening" type="text/x-tmpl">
-      <div class="container-fluid main-top light-bg">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <button class="btn btn-lg btn-warning skipbutton" id="button_play" name="button_play" onclick="e.functions.replayPhrase();" type="button">Play audio</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 voffset3 text-center">
-            <input class="form-control input-lg text-center" id="speech-msg" name="speech-msg" placeholder="Type what you hear in French here" type="text">
-            <p id="help"></p>
-          </div>
-        </div>
-        <div class="row voffset4">
-          <div class="col-md-4 col-md-offset-4 text-center">
-          <button class="btn btn-lg btn-warning skipbutton" id="button_next" name="button_next" onclick="e.functions.skipNextPhrase();" type="button">Next</button>
-        </div>
-        </div>
-      </div>
-
-      <!-- Settings -->
-      <div class="container-fluid theme-showcase" role="main">
-
-      <div class="row text-left voffset5">
-        <div class="col-md-2 col-md-offset-4"><p>I want to learn:</p></div>
-        <div class="col-md-2">
-          <select id="target-language" class="form-control">
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="de">German</option>
-              <option value="es">Spanish</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row text-left voffset2">
-        <div class="col-md-2 col-md-offset-4">I want hints and help in:</div>
-        <div class="col-md-2">
-          <select id="base-language" class="form-control">
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="de">German</option>
-              <option value="es">Spanish</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row text-left voffset4">
-        <div class="col-md-2 col-md-offset-2">Exercise Type:</div>
-        <div class="col-md-6">
-          <div aria-label="Numbers" class="btn-group" role="group">
-              <!-- <button type="button" class="btn btn-default" onclick="e.functions.setExerciseType('number_general_phrases');">General phrases</button> -->
-              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_recent');" type="button">Recent years</button>
-              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_year_historical');" type="button">Historical years</button>
-              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_age_human');" type="button">Human ages</button>
-              <button class="btn btn-default" onclick="e.functions.setExerciseType('number_money_small');" type="button">Money amounts</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row text-left voffset1">
-        <div class="col-md-2 col-md-offset-2"></div>
-        <div class="col-md-6">
-          <div aria-label="Phrases" class="btn-group" role="group">
-                <button class="btn btn-default" onclick="e.functions.setExerciseType('phrases');" type="button">Phrases</button>
-                <button class="btn btn-default" onclick="e.functions.setExerciseType('questions');" type="button">Questions</button>
-                <button class="btn btn-default" onclick="e.functions.setExerciseType('verbs');" type="button">Verbs</button>
-                <button class="btn btn-default" onclick="e.functions.setExerciseType('cafe');" type="button">Cafe</button>
-                <button class="btn btn-default" onclick="e.functions.setExerciseType('weather');" type="button">Weather</button>
-                <button class="btn btn-default" onclick="e.functions.setExerciseType('daily_activities');" type="button">Daily Activities</button>
-          </div>
-        </div>
-      </div>
-
-        <div class="row text-left voffset2">
-          <div class="col-md-2 col-md-offset-2">Speech rate:</div>
-          <div class="col-md-6">
-            <div aria-label="Numbers" class="btn-group" role="group">
-              <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.5);" type="button">Very slow</button>
-              <button class="btn btn-default" onclick="e.functions.setSpeechRate(0.8);" type="button">Medium</button>
-              <button class="btn btn-default" onclick="e.functions.setSpeechRate(1.1);" type="button">Native</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row voffset4">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <p id="msg"></p>
-          </div>
-        </div>
-      </div>
-      <!-- /Settings -->
-
-    </script> <!-- /Listening -->
 
     <!-- Speaking -->
     <script id="speaking" type="text/x-tmpl">
