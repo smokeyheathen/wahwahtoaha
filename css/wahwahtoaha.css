@@ -10,6 +10,18 @@
 .voffset8 { margin-top: 100px; }
 .voffset9 { margin-top: 150px; }
 
+.voffsetbottom  { padding-bottom: 2px; }
+.voffsetbottom1 { padding-bottom: 5px; }
+.voffsetbottom2 { padding-bottom: 10px; }
+.voffsetbottom3 { padding-bottom: 15px; }
+.voffsetbottom4 { padding-bottom: 30px; }
+.voffsetbottom5 { padding-bottom: 40px; }
+.voffsetbottom6 { padding-bottom: 60px; }
+.voffsetbottom7 { padding-bottom: 80px; }
+.voffsetbottom8 { padding-bottom: 100px; }
+.voffsetbottom9 { padding-bottom: 150px; }
+
+
 .jumbotron {
 	/* background: #FFFEE9 url("../wahwahtoaha-background.jpg") no-repeat 100% 100%; padding-bottom:6em; */
   background-color: #FFFEE9;
@@ -24,6 +36,7 @@
 .feature-two{background-color:#eeeeee;}
 .footer{background-color:#eeeeee;}
 .glyphicon-feature{font-size:150px;}
+.feedback-form{background-color:#eea236;}
 
 body {
 	background-color: #FFDE64;

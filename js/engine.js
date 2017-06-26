@@ -41,6 +41,111 @@ e = {
       }
       return true;
     },
+
+  filterPhrases(){
+
+  var tagFilterList = {
+    "include" : [
+      { "tag" : ["weather"] },// each tag in a row is an 'OR'
+      {"tag" : ["cafe"]} // each row is an 'AND'
+    ],
+    "exclude" : [
+      { "tag" : ["verb"] }, // each tag in a row is an 'OR'
+      {"tag" : ["level 1", "rain"]}
+    ]
+  };
+
+  e.functions.resetPhraseListToMaster();
+
+  // e.functions.FilterTagsOR();
+  e.phrases[e.defaults.languageBase][e.defaults.languageTarget] =
+    e.functions.filterTagsOR(
+      e.phrases[e.defaults.languageBase][e.defaults.languageTarget], tagFilterList.include[1].tag
+    );
+//  console.log ("OR Filtered Phrases: " + JSON.stringify(e.phrases[e.defaults.languageBase][e.defaults.languageTarget]));
+
+  // e.functions.FilterTagsAND();
+  e.functions.resetPhraseListToMaster();
+  e.phrases[e.defaults.languageBase][e.defaults.languageTarget] =
+      e.functions.filterTagsAND(
+       e.phrases[e.defaults.languageBase][e.defaults.languageTarget], tagFilterList.include[0].tag
+      );
+//   console.log ("Filtered Phrases: " + JSON.stringify(e.phrases[e.defaults.languageBase][e.defaults.languageTarget]));
+
+  // e.functions.FilterExcludeTagsOR();
+  e.functions.resetPhraseListToMaster();
+  e.phrases[e.defaults.languageBase][e.defaults.languageTarget] =
+      e.functions.filterExcludeTagsOR(
+       e.phrases[e.defaults.languageBase][e.defaults.languageTarget], tagFilterList.exclude[0].tag
+      );
+
+    // e.functions.FilterExcludeTagsAND();
+    e.functions.resetPhraseListToMaster();
+
+    // testing
+    e.phrases[e.defaults.languageBase][e.defaults.languageTarget] =
+      e.functions.filterTagsOR(
+        e.phrases[e.defaults.languageBase][e.defaults.languageTarget], tagFilterList.include[0].tag
+      );
+
+    e.phrases[e.defaults.languageBase][e.defaults.languageTarget] =
+        e.functions.filterExcludeTagsAND(
+         e.phrases[e.defaults.languageBase][e.defaults.languageTarget], tagFilterList.exclude[1].tag
+        );
+
+   console.log ("EXCLUDE AND Filtered Phrases: " + JSON.stringify(e.phrases[e.defaults.languageBase][e.defaults.languageTarget]));
+
+  },
+
+//filterExcludeTagsOR - exclude phrase if any tag is present
+filterExcludeTagsOR(phraseList, excludeTagList){
+  var tempPhraseList = [];
+  for (i=0; i<excludeTagList.length; i++){
+      if (i==0){
+       tempPhraseList = e.functions.searchTagExclude(phraseList,excludeTagList[i]);
+      }
+      else{
+        tempPhraseList = e.functions.searchTagExclude(tempPhraseList,excludeTagList[i]);
+      }
+  }
+  return tempPhraseList;
+},
+  // filterExcludeTagsAND - All tags must be present in order for phrase to be excluded
+  filterExcludeTagsAND(phraseList, excludeTagList){
+    var results = jQuery.map(phraseList, function(obj){
+      var flag = 0;
+      for (i=0;i<excludeTagList.length; i++){
+        if (obj.tags.indexOf(excludeTagList[i])>=0){
+          flag++;
+        }
+      }
+      if (flag!=excludeTagList.length){
+          return obj;
+      }
+    });
+    return results;
+  },
+
+  filterTagsOR(phraseList, orTagList) {
+    var tempPhraseList = [];
+    for (i=0; i<orTagList.length; i++){
+      if (i==0){
+        tempPhraseList = e.functions.searchTag(phraseList,orTagList[0]);
+      }
+      else{
+        tempPhraseList = tempPhraseList.concat(e.functions.searchTag(phraseList,orTagList[i]));
+      }
+    }
+    return tempPhraseList;
+  },
+
+  filterTagsAND(phraseList, andTagList){
+    for (i=0; i<andTagList.length; i++){
+      phraseList = e.functions.searchTag(phraseList, andTagList[i]);
+      }
+    return phraseList;
+  },
+
     getNewPhrase(currentExercise){
       switch (currentExercise)
       {	case "number_year_recent": var currentPhrase = e.functions.gnYearRecent(); break;
@@ -76,22 +181,34 @@ e = {
         case "To speak": var currentPhrase = e.functions.getTestPhrase("to speak"); break;
         case "To show": var currentPhrase = e.functions.getTestPhrase("to show"); break;
         default:
-          var currentPhrase = "je ne sais pas";
+          var currentPhrase = "error";
         break;
       }
       e.defaults.currentPhrase = currentPhrase;
+      e.functions.updateFeedbackFormFields();
     },
     getTestPhrase(tag){
-      var phrases = e.phrases[e.defaults.languageBase][e.defaults.languageTarget];
+      e.phrases[e.defaults.languageBase][e.defaults.languageTarget] = e.masterPhraseList[e.defaults.languageBase][e.defaults.languageTarget]
+        //  var phrases = e.phrases[e.defaults.languageBase][e.defaults.languageTarget];
+console.log("getTestPhrase: "+ tag);
       if (typeof tag !== 'undefined') {
-        phrases = e.functions.searchTag(phrases, tag);
+        //phrases = e.functions.searchTag(phrases, tag);
+        e.phrases[e.defaults.languageBase][e.defaults.languageTarget] =
+            e.functions.searchTag( e.phrases[e.defaults.languageBase][e.defaults.languageTarget], tag);
       }
-      if (typeof phrases == 'undefined') {
+console.log("Done search tag");
+      if (typeof  e.phrases[e.defaults.languageBase][e.defaults.languageTarget] == 'undefined') {
         console.error("no phrases");
         return "error - no phrases";
       }
-      var phrase = phrases[e.functions.gnRandomInteger(0,phrases.length)];
-      return phrase;
+console.log("Done no phrase check");
+      //var phrase = phrases[e.functions.gnRandomInteger(0,phrases.length)];
+      //e.phrases[e.defaults.languageBase][e.defaults.languageTarget] = phrases;
+      //e.defaults.currentPhrase = phrases[e.functions.gnRandomInteger(0,phrases.length)];
+      e.defaults.currentPhrase = e.phrases[e.defaults.languageBase][e.defaults.languageTarget][e.functions.gnRandomInteger(0,e.phrases[e.defaults.languageBase][e.defaults.languageTarget].length)];
+console.log("Currentphrase: " + e.defaults.currentPhrase);
+      return e.defaults.currentPhrase;
+      //return phrase;
     },
 
     // generate_phrase_random_integer
@@ -243,6 +360,8 @@ loadenfrphrases(jsondata){
     e.phrases[e.defaults.languageBase] = {};
   }
   e.phrases[e.defaults.languageBase][e.defaults.languageTarget] = jsondata;
+
+e.masterPhraseList = (JSON.parse(JSON.stringify(e.phrases)));
 },
 
     loadPhrasesFromGoogle(base,target){
@@ -407,7 +526,9 @@ console.log ("Languagepaire: " + languagePair);
     replayPhrase() {
       e.functions.speak();
     },
-
+    resetPhraseListToMaster(){
+      e.phrases = (JSON.parse(JSON.stringify(e.masterPhraseList)));
+    },
     searchTag(phrasesObj, tag) {
       var results = jQuery.map(phrasesObj, function(obj) {
         if(obj.tags.indexOf(tag) >= 0) {
@@ -416,6 +537,17 @@ console.log ("Languagepaire: " + languagePair);
       });
       return results;
     },
+
+    searchTagExclude(phrasesObj, tag) {
+      var results = jQuery.map(phrasesObj, function(obj) {
+        if(obj.tags.indexOf(tag) == -1) {
+          return obj; // or return obj.name, whatever.
+        }
+      });
+      return results;
+    },
+
+
 
     setExerciseType(newExercise) {
       e.defaults.currentExercise = newExercise;
@@ -589,7 +721,13 @@ console.log ("Lower case phrase " + lowerCasePhrase);
         e.functions.speak();
         $('#speech-msg').val("");
         $('#help').text("");
+    },
+    updateFeedbackFormFields(){
+      $('#ffPhrase').html("Phrase: " + e.defaults.currentPhrase.target);
+      $('#ffTranslation').html("Translation: " + e.defaults.currentPhrase.base);
+      $('#ffLanguagePair').html("Language Pair: " + e.defaults.languageBase + '-' + e.defaults.languageTarget);
     }
   }, // end functions
-  phrases: {}
+  phrases: {},
+  masterPhraseList: {}
 }
